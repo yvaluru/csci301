@@ -1,0 +1,22 @@
+\documentclass{article}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.multipart,positioning}
+
+\begin{document}
+
+
+\begin{tikzpicture}[twocell/.style={draw,
+                                    rectangle split, 
+                                    rectangle split horizontal,
+                                    rectangle split parts=2
+                                   }
+]
+\node[twocell](aa){};
+\node[twocell](bb)[below left=of aa]{};
+\node[twocell](cc)[below right=of aa]{};
+\draw[->,red]  (aa.west) -| (bb.north);
+\draw[->,blue] (aa.east) -| (cc.north);
+\end{tikzpicture}
+
+\end{document}

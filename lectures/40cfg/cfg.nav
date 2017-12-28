@@ -1,0 +1,158 @@
+\beamer@endinputifotherversion {3.33pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\sectionentry {1}{Readings}{2}{Readings}{0}}
+\headcommand {\beamer@sectionpages {1}{1}}
+\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\slideentry {1}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\sectionentry {2}{Context Free Grammar}{3}{Context Free Grammar}{0}}
+\headcommand {\beamer@sectionpages {2}{2}}
+\headcommand {\beamer@subsectionpages {2}{2}}
+\headcommand {\slideentry {2}{0}{3}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\sectionentry {3}{Context Free Grammar Examples}{4}{Context Free Grammar Examples}{0}}
+\headcommand {\beamer@sectionpages {3}{3}}
+\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\slideentry {3}{0}{4}{4/4}{}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\sectionentry {4}{Context Free Grammar for Arithmetic Expressions}{5}{Context Free Grammar for Arithmetic Expressions}{0}}
+\headcommand {\beamer@sectionpages {4}{4}}
+\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\slideentry {4}{0}{5}{5/5}{}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\sectionentry {5}{Context Free Grammar for Programming Language}{6}{Context Free Grammar for Programming Language}{0}}
+\headcommand {\beamer@sectionpages {5}{5}}
+\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\slideentry {5}{0}{6}{6/6}{}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\sectionentry {6}{Derivations}{7}{Derivations}{0}}
+\headcommand {\beamer@sectionpages {6}{6}}
+\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\slideentry {6}{0}{7}{7/8}{}{0}}
+\headcommand {\beamer@framepages {7}{8}}
+\headcommand {\sectionentry {7}{Derivations}{9}{Derivations}{0}}
+\headcommand {\beamer@sectionpages {7}{8}}
+\headcommand {\beamer@subsectionpages {7}{8}}
+\headcommand {\slideentry {7}{0}{8}{9/9}{}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\sectionentry {8}{All regular languages are context free languages}{10}{All regular languages are context free languages}{0}}
+\headcommand {\beamer@sectionpages {9}{9}}
+\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\slideentry {8}{0}{9}{10/10}{}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\sectionentry {9}{Generate All Possible Sentences from a CF grammar}{11}{Generate All Possible Sentences from a CF grammar}{0}}
+\headcommand {\beamer@sectionpages {10}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\slideentry {9}{0}{10}{11/11}{}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\sectionentry {10}{Generate All Possible Sentences from a CF grammar}{12}{Generate All Possible Sentences from a CF grammar}{0}}
+\headcommand {\beamer@sectionpages {11}{11}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\slideentry {10}{0}{11}{12/12}{}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\sectionentry {11}{Generate All Possible Sentences from a CF grammar}{13}{Generate All Possible Sentences from a CF grammar}{0}}
+\headcommand {\beamer@sectionpages {12}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\slideentry {11}{0}{12}{13/13}{}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\sectionentry {12}{CFG problems}{14}{CFG problems}{0}}
+\headcommand {\beamer@sectionpages {13}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\slideentry {12}{0}{13}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\sectionentry {13}{Removing $\ensuremath {\epsilon }$ from grammars}{15}{Removing $\ensuremath {\epsilon }$ from grammars}{0}}
+\headcommand {\beamer@sectionpages {14}{14}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\slideentry {13}{0}{14}{15/15}{}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\sectionentry {14}{Removing $\ensuremath {\epsilon }$ from grammars}{16}{Removing $\ensuremath {\epsilon }$ from grammars}{0}}
+\headcommand {\beamer@sectionpages {15}{15}}
+\headcommand {\beamer@subsectionpages {15}{15}}
+\headcommand {\slideentry {14}{0}{15}{16/16}{}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\sectionentry {15}{Chomsky Normal Form}{17}{Chomsky Normal Form}{0}}
+\headcommand {\beamer@sectionpages {16}{16}}
+\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\slideentry {15}{0}{16}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\sectionentry {16}{Converting to Chomsky Normal Form}{18}{Converting to Chomsky Normal Form}{0}}
+\headcommand {\beamer@sectionpages {17}{17}}
+\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\slideentry {16}{0}{17}{18/18}{}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\sectionentry {17}{Example converting to Chomsky Normal Form}{19}{Example converting to Chomsky Normal Form}{0}}
+\headcommand {\beamer@sectionpages {18}{18}}
+\headcommand {\beamer@subsectionpages {18}{18}}
+\headcommand {\slideentry {17}{0}{18}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\sectionentry {18}{Note on Eliminating Unit Rules}{20}{Note on Eliminating Unit Rules}{0}}
+\headcommand {\beamer@sectionpages {19}{19}}
+\headcommand {\beamer@subsectionpages {19}{19}}
+\headcommand {\slideentry {18}{0}{19}{20/20}{}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\sectionentry {19}{Consequences of Chomsky Normal Form}{21}{Consequences of Chomsky Normal Form}{0}}
+\headcommand {\beamer@sectionpages {20}{20}}
+\headcommand {\beamer@subsectionpages {20}{20}}
+\headcommand {\slideentry {19}{0}{20}{21/22}{}{0}}
+\headcommand {\beamer@framepages {21}{22}}
+\headcommand {\sectionentry {20}{Greibach Normal Form}{23}{Greibach Normal Form}{0}}
+\headcommand {\beamer@sectionpages {21}{22}}
+\headcommand {\beamer@subsectionpages {21}{22}}
+\headcommand {\slideentry {20}{0}{21}{23/23}{}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\sectionentry {21}{Converting to Greibach Normal Form}{24}{Converting to Greibach Normal Form}{0}}
+\headcommand {\beamer@sectionpages {23}{23}}
+\headcommand {\beamer@subsectionpages {23}{23}}
+\headcommand {\slideentry {21}{0}{22}{24/24}{}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\sectionentry {22}{Consequences of Greibach Normal Form}{25}{Consequences of Greibach Normal Form}{0}}
+\headcommand {\beamer@sectionpages {24}{24}}
+\headcommand {\beamer@subsectionpages {24}{24}}
+\headcommand {\slideentry {22}{0}{23}{25/25}{}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\sectionentry {23}{Pumping Lemma for CF Languages}{26}{Pumping Lemma for CF Languages}{0}}
+\headcommand {\beamer@sectionpages {25}{25}}
+\headcommand {\beamer@subsectionpages {25}{25}}
+\headcommand {\slideentry {23}{0}{24}{26/26}{}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\sectionentry {24}{Pumping Lemma for CF Languages}{27}{Pumping Lemma for CF Languages}{0}}
+\headcommand {\beamer@sectionpages {26}{26}}
+\headcommand {\beamer@subsectionpages {26}{26}}
+\headcommand {\slideentry {24}{0}{25}{27/27}{}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\sectionentry {25}{Proof that $L = a^nb^nc^n$ is not CF}{28}{Proof that $L = a^nb^nc^n$ is not CF}{0}}
+\headcommand {\beamer@sectionpages {27}{27}}
+\headcommand {\beamer@subsectionpages {27}{27}}
+\headcommand {\slideentry {25}{0}{26}{28/28}{}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\sectionentry {26}{Pumping Lemma exercises (some are hard)}{29}{Pumping Lemma exercises (some are hard)}{0}}
+\headcommand {\beamer@sectionpages {28}{28}}
+\headcommand {\beamer@subsectionpages {28}{28}}
+\headcommand {\slideentry {26}{0}{27}{29/29}{}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\sectionentry {27}{CF Languages are closed under union, product, and closure}{30}{CF Languages are closed under union, product, and closure}{0}}
+\headcommand {\beamer@sectionpages {29}{29}}
+\headcommand {\beamer@subsectionpages {29}{29}}
+\headcommand {\slideentry {27}{0}{28}{30/30}{}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\sectionentry {28}{CF languages are NOT closed under complement}{31}{CF languages are NOT closed under complement}{0}}
+\headcommand {\beamer@sectionpages {30}{30}}
+\headcommand {\beamer@subsectionpages {30}{30}}
+\headcommand {\slideentry {28}{0}{29}{31/31}{}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\sectionentry {29}{CF languages are NOT closed under intersection}{32}{CF languages are NOT closed under intersection}{0}}
+\headcommand {\beamer@sectionpages {31}{31}}
+\headcommand {\beamer@subsectionpages {31}{31}}
+\headcommand {\slideentry {29}{0}{30}{32/32}{}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\sectionentry {30}{The intersection of a CF language and a regular language is CF}{33}{The intersection of a CF language and a regular language is CF}{0}}
+\headcommand {\beamer@sectionpages {32}{32}}
+\headcommand {\beamer@subsectionpages {32}{32}}
+\headcommand {\slideentry {30}{0}{31}{33/33}{}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\beamer@partpages {1}{33}}
+\headcommand {\beamer@subsectionpages {33}{33}}
+\headcommand {\beamer@sectionpages {33}{33}}
+\headcommand {\beamer@documentpages {33}}
+\headcommand {\def \inserttotalframenumber {31}}

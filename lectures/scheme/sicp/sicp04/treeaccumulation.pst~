@@ -1,0 +1,23 @@
+
+\pstree{\Tcircle{390}}
+  {
+    \Tcircle{$*$}
+    \pstree{\Tcircle{26}}
+      {
+        \Tcircle{$+$}
+        \Tcircle{2}
+        \pstree{\Tcircle{24}}
+          {
+            \Tcircle{$*$}
+            \Tcircle{4}
+            \Tcircle{6}
+          }
+        \pstree{\Tcircle{15}}
+          {
+           \Tcircle{$+$}
+           \Tcircle{3}
+           \Tcircle{5}
+           \Tcircle{7}
+          }
+      }
+  }

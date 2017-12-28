@@ -1,0 +1,15 @@
+\frametitle{Let examples} 
+\begin{Verbatim}
+(define procedure-with-let
+   (lambda (x)
+      (let ((a (+ x 2))
+            (b (* x 3)))
+         (+ a b))))
+\end{Verbatim}
+What will be returned by the following call?
+\begin{Verbatim}
+(procedure-with-let 4)
+\end{Verbatim}
+\pause
+18
+

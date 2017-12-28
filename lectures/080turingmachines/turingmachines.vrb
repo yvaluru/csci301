@@ -1,0 +1,37 @@
+\frametitle{ Busy Beaver proof }
+
+\begin{itemize}
+\item
+  Build a machine $M_{2k}$ with $2k$ states that does nothing but put
+  $2k$ 1s on a blank tape.
+  \item Now build a machine $M_{D}$
+  that starts by putting $2k$ 1's on the tape, and then runs the $M_g$
+  machine.
+
+\begin{tikzpicture}[->,>=latex,very thick,node distance=4cm,auto,every node/.style={scale=0.75}]
+  \node (6) {
+    \begin{tabular}{ccc}\hline
+      &  & \\\hline
+      & $\epsilon$ & \\
+    \end{tabular}
+  };
+  \node (7) [right of = 6] {
+    \begin{tabular}{ccc}\hline
+      & 1111 & \\\hline
+      & $2k$ & \\
+    \end{tabular}
+  };
+  \node (8) [right of=7] {
+    \begin{tabular}{ccc}\hline
+      & 11111111 & \\\hline
+      & $bb(2(2k))$ & \\
+    \end{tabular}
+    };
+  \path (6) edge [bend left] node {$M_{2k}$} (7);
+  \path (7) edge [bend left] node {$M_g$} (8);
+  \path (6) edge [bend right] node {$M_{D}$} (8);
+  \end{tikzpicture}
+\item $M_{D}$ can be built with $3k$ states.
+\item The output of $M_{D}$ is $g(2k) = bb(2(2k)) = bb(4k)$ 1s.
+\item Do you see the problem?
+\end{itemize}

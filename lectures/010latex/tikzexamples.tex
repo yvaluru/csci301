@@ -1,0 +1,168 @@
+\documentclass{article}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+
+\title{Some examples typesetting finite automata in \LaTeX}
+\author{Geoffrey Matthews}
+\begin{document}
+\maketitle
+
+Put the following in your preamble:
+\begin{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+\end{verbatim}
+\newpage
+\begin{verbatim}  
+  \begin{tikzpicture}[->,>=latex,thick,auto,node distance=2.5cm]
+    \node[state,initial] (q1) {$q_1$};
+    \node[state,accepting] (q2) [right of=q1] {$q_2$};
+    \node[state] (q3) [right of=q2] {$q_3$};
+    \path (q1) edge [loop above] node {0} (q1);
+    \path (q1) edge node {1} (q2);
+    \path (q2) edge [bend left] node {0} (q3);
+    \path (q3) edge [bend left] node {0,1} (q2);
+  \end{tikzpicture}
+\end{verbatim}
+  \begin{tikzpicture}[->,>=latex,thick,auto,node distance=2.5cm]
+    \node[state,initial] (q1) {$q_1$};
+    \node[state,accepting] (q2) [right of=q1] {$q_2$};
+    \node[state] (q3) [right of=q2] {$q_3$};
+    \path (q1) edge [loop above] node {0} (q1);
+    \path (q1) edge node {1} (q2);
+    \path (q2) edge [bend left] node {0} (q3);
+    \path (q3) edge [bend left] node {0,1} (q2);
+  \end{tikzpicture}
+
+\begin{verbatim}  
+  \begin{tikzpicture}[->,>=latex,thick,auto,node distance=2.5cm]
+    \node[state,initial] (q1) {$q_1$};
+    \node[state,accepting] (q2) [right of=q1] {$q_2$};
+    \node[state] (q3) [right of=q2] {$q_3$};
+    \path (q1) edge [loop above] node {0} (q1)
+          (q1) edge node {1} (q2)
+          (q2) edge [bend left] node {0} (q3)
+          (q3) edge [bend left] node {0,1} (q2);
+  \end{tikzpicture}
+\end{verbatim}
+  \begin{tikzpicture}[->,>=latex,thick,auto,node distance=2.5cm]
+    \node[state,initial] (q1) {$q_1$};
+    \node[state,accepting] (q2) [right of=q1] {$q_2$};
+    \node[state] (q3) [right of=q2] {$q_3$};
+    \path (q1) edge [loop above] node {0} (q1)
+          (q1) edge node {1} (q2)
+          (q2) edge [bend left] node {0} (q3)
+          (q3) edge [bend left] node {0,1} (q2);
+  \end{tikzpicture}
+
+  \newpage
+  
+\begin{verbatim}  
+  \begin{tikzpicture}[->,>=latex,thick,auto,node distance=2.5cm]
+    \node[state,initial] (e) {$q_e$};
+    \node[state,accepting] (o) [right of=e] {$q_o$};
+    \path (e) edge [loop above] node {0} (e)
+          (e) edge [bend left] node {1} (o)
+          (o) edge [bend left] node {1} (e)
+          (o) edge [loop above] node {0} (e);
+  \end{tikzpicture}
+\end{verbatim}
+  
+  \begin{tikzpicture}[->,>=latex,thick,auto,node distance=2.5cm]
+    \node[state,initial] (e) {$q_e$};
+    \node[state,accepting] (o) [right of=e] {$q_o$};
+    \path (e) edge [loop above] node {0} (e)
+          (e) edge [bend left] node {1} (o)
+          (o) edge [bend left] node {1} (e)
+          (o) edge [loop above] node {0} (e);
+  \end{tikzpicture}
+  \begin{verbatim}
+  \begin{tikzpicture}[->,>=latex,thick,auto,node distance=2.5cm]
+    \node[state,initial] (q) {$q$};
+    \node[state] (1) [right of=q] {$q_1$};
+    \node[state] (10) [below of=1] {$q_{10}$};
+    \node[state,accepting] (101) [right of=10] {$q_{101}$};
+    \path (q) edge [loop above] node {0} (q)
+          (q) edge node {1} (1)
+          (1) edge [loop above] node {1} (1)
+          (1) edge node {0} (10)
+          (10) edge node {0} (q)
+          (10) edge node {1} (101)
+          (101) edge [loop above] node {0,1} (101);
+  \end{tikzpicture}
+\end{verbatim}
+\begin{tikzpicture}[->,>=latex,thick,auto,node distance=2.5cm]
+  \node[state,initial] (q) {$q$};
+  \node[state] (1) [right of=q] {$q_1$};
+  \node[state] (10) [below of=1] {$q_{10}$};
+  \node[state,accepting] (101) [right of=10] {$q_{101}$};
+  \path (q) edge [loop above] node {0} (q)
+  (q) edge node {1} (1)
+  (1) edge [loop above] node {1} (1)
+  (1) edge node {0} (10)
+  (10) edge node {0} (q)
+  (10) edge node {1} (101)
+  (101) edge [loop above] node {0,1} (101);
+\end{tikzpicture}
+
+\newpage
+\begin{verbatim}
+\begin{tikzpicture}[->,>=latex,thick,auto,node distance=2.5cm]
+  \node[state,initial] (000) {$q_{000}$};
+  \node[state,accepting] (100) [right of=000] {$q_{100}$};
+  \node[state] (010) [right of=100] {$q_{010}$};
+  \node[state,accepting] (110) [right of=010] {$q_{110}$};
+  \node[state] (001) [below of=000] {$q_{001}$};
+  \node[state,accepting] (101) [right of=001] {$q_{101}$};
+  \node[state] (011) [right of=101] {$q_{011}$};
+  \node[state,accepting] (111) [right of=011] {$q_{111}$};
+  \path (000) edge [loop above] node {0} (000)
+  (000) edge node {1} (001)
+  (100) edge node {0} (000)
+  (100) edge node [left] {1} (001)
+  (010) edge node {0} (100)
+  (010) edge [out=-140,in=50] node [left] {1} (101)
+  (110) edge [out=90, in=90] node [above] {0} (100)
+  (110) edge node [above] {1} (101)
+  (001) edge node {0} (010)
+  (001) edge [out=-90, in=-90] node {1} (011)
+  (101) edge [out=40,in=-130] node [right] {0} (010)
+  (101) edge node {1} (011)
+  (011) edge node [below] {0} (110)
+  (011) edge node {1} (111)
+  (111) edge node {0} (110)
+  (111) edge [loop below] node {1} (111);
+\end{tikzpicture}
+\end{verbatim}
+\begin{tikzpicture}[->,>=latex,thick,auto,node distance=2.5cm]
+  \node[state,initial] (000) {$q_{000}$};
+  \node[state,accepting] (100) [right of=000] {$q_{100}$};
+  \node[state] (010) [right of=100] {$q_{010}$};
+  \node[state,accepting] (110) [right of=010] {$q_{110}$};
+  \node[state] (001) [below of=000] {$q_{001}$};
+  \node[state,accepting] (101) [right of=001] {$q_{101}$};
+  \node[state] (011) [right of=101] {$q_{011}$};
+  \node[state,accepting] (111) [right of=011] {$q_{111}$};
+  \path (000) edge [loop above] node {0} (000)
+  (000) edge node {1} (001)
+  (100) edge node {0} (000)
+  (100) edge node [left] {1} (001)
+  (010) edge node {0} (100)
+  (010) edge [out=-140,in=50] node [left] {1} (101)
+  (110) edge [out=90, in=90] node [above] {0} (100)
+  (110) edge node [above] {1} (101)
+  (001) edge node {0} (010)
+  (001) edge [out=-90, in=-90] node {1} (011)
+  (101) edge [out=40,in=-130] node [right] {0} (010)
+  (101) edge node {1} (011)
+  (011) edge node [below] {0} (110)
+  (011) edge node {1} (111)
+  (111) edge node {0} (110)
+  (111) edge [loop below] node {1} (111);
+\end{tikzpicture}
+
+
+
+
+\end{document}

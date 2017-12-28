@@ -1,0 +1,125 @@
+\documentclass{beamer}
+%\usetheme{Singapore}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+
+%\usepackage{pstricks,pst-node,pst-tree}
+\usepackage{amssymb,latexsym}
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ii}{\item}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\Show}[1]{\psshadowbox{#1}}
+
+
+\newcommand{\grf}[2]{\centerline{\includegraphics[width=#1\textwidth]{#2}}}
+\newcommand{\tw}{\textwidth}
+\newcommand{\bc}{\begin{columns}}
+\newcommand{\ec}{\end{columns}}
+\newcommand{\cc}[1]{\column{#1\textwidth}}
+
+\newcommand{\bfr}[1]{\begin{frame}[fragile]\frametitle{{ #1 }}}
+\newcommand{\efr}{\end{frame}}
+
+\newcommand{\cola}[1]{\begin{columns}\begin{column}{#1\textwidth}}
+\newcommand{\colb}[1]{\end{column}\begin{column}{#1\textwidth}}
+\newcommand{\colc}{\end{column}\end{columns}}
+
+\title{Recursion Theorem Notes}
+\author{Geoffrey Matthews}
+
+\RecustomVerbatimEnvironment{Verbatim}{Verbatim}{frame=single}
+
+\newcommand{\pth}[5]{\path (#1) edge node {$\frac{#2}{#3 #4}$} (#5); }
+\newcommand{\pthl}[5]{\path (#1) edge [bend left] node {$\frac{#2}{#3 #4}$} (#5); }
+\newcommand{\pthr}[5]{\path (#1) edge [bend right] node {$\frac{#2}{#3 #4}$} (#5); }
+\newcommand{\pthla}[5]{\path (#1) edge [loop above] node {$\frac{#2}{#3 #4}$} (#5); }
+\newcommand{\pthlb}[5]{\path (#1) edge [loop below] node {$\frac{#2}{#3 #4}$} (#5); }
+\newcommand{\pthlr}[5]{\path (#1) edge [loop right] node {$\frac{#2}{#3 #4}$} (#5); }
+\newcommand{\pthll}[5]{\path (#1) edge [loop left] node {$\frac{#2}{#3 #4}$} (#5); }
+
+
+\begin{document}
+\begin{frame}
+\maketitle
+
+\end{frame}
+
+\bfr{Self Reference}
+\begin{itemize}
+\item This sentence is false.\pause
+\item Print the following twice, the second time in quotations:\\
+  ``Print the following twice, the second time in quotations:''\pause
+  \item ``yields falsehood when appended to its own quotation.''\\
+  yields falsehood when appended to its own quotation.''
+\end{itemize}
+
+\end{frame}
+
+\bfr{Quine Pages}
+\begin{itemize}
+\item  \url{https://www.nyx.net/~gthompso/quine.htm}
+\item \url{http://www.madore.org/~david/computers/quine.html}
+\end{itemize}
+\end{frame}
+
+\bfr{A Quine Turing Machine}
+\begin{itemize}
+\item Consider the TM $B$:
+  \fbox{\parbox{3in}{
+    $B$: on input $\langle M \rangle$:
+    \begin{itemize}
+    \item Create TM $A$:
+      \fbox{\parbox{2in}{
+        $A$: on input $w$:
+        \begin{itemize}
+        \item Erase $w$
+        \item Write $\langle M \rangle$ on the tape.
+        \item Simulate what's on the tape.
+        \end{itemize}
+      }}
+  \item Write $\langle A\rangle$ on the tape.
+  \end{itemize}
+  }}
+\item Now consider TM $A$:
+      \fbox{\parbox{3in}{
+        $A$: on input $w$:
+        \begin{itemize}
+        \item Erase $w$
+        \item Write $\langle B \rangle$ on the tape.
+        \item Simulate what's on the tape.
+        \end{itemize}
+      }}
+  
+\pause
+\item Note that $B$ could do other things before writing $A$ and halting.
+  \end{itemize}
+\end{frame}
+
+\bfr{Recursion theorem makes undecidability easier to prove}
+\[
+Halt = \{ \langle M,w\rangle : \mbox{$M$ is a TM that terminates on $w$}\}
+\]
+
+Assume there is a TM $H$ that decides this language.
+
+Construct the following TM $Q$:
+
+\centerline{\fbox{\parbox{3in}{
+    $Q$ : On input $w$:
+    \begin{itemize}
+      \item Obtain description of self, $\langle Q \rangle$.
+      \item Run $H$ on $\langle Q, w\rangle$.
+      \item If $H$ accepts, loop forever, else halt.
+    \end{itemize}
+}}}
+
+\end{frame}
+
+
+
+\end{document}
+

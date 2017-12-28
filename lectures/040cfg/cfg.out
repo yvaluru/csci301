@@ -1,0 +1,30 @@
+\BOOKMARK [2][]{Outline0.1}{Readings}{}% 1
+\BOOKMARK [2][]{Outline0.2}{Context Free Grammar}{}% 2
+\BOOKMARK [2][]{Outline0.3}{Context Free Grammar Examples}{}% 3
+\BOOKMARK [2][]{Outline0.4}{Context Free Grammar for Arithmetic Expressions}{}% 4
+\BOOKMARK [2][]{Outline0.5}{Context Free Grammar for Programming Language}{}% 5
+\BOOKMARK [2][]{Outline0.6}{Derivations}{}% 6
+\BOOKMARK [2][]{Outline0.7}{Derivations}{}% 7
+\BOOKMARK [2][]{Outline0.8}{All regular languages are context free languages}{}% 8
+\BOOKMARK [2][]{Outline0.9}{Generate All Possible Sentences from a CF grammar}{}% 9
+\BOOKMARK [2][]{Outline0.10}{Generate All Possible Sentences from a CF grammar}{}% 10
+\BOOKMARK [2][]{Outline0.11}{Generate All Possible Sentences from a CF grammar}{}% 11
+\BOOKMARK [2][]{Outline0.12}{CFG problems}{}% 12
+\BOOKMARK [2][]{Outline0.13}{Removing \040from grammars}{}% 13
+\BOOKMARK [2][]{Outline0.14}{Removing \040from grammars}{}% 14
+\BOOKMARK [2][]{Outline0.15}{Chomsky Normal Form}{}% 15
+\BOOKMARK [2][]{Outline0.16}{Converting to Chomsky Normal Form}{}% 16
+\BOOKMARK [2][]{Outline0.17}{Example converting to Chomsky Normal Form}{}% 17
+\BOOKMARK [2][]{Outline0.18}{Note on Eliminating Unit Rules}{}% 18
+\BOOKMARK [2][]{Outline0.19}{Consequences of Chomsky Normal Form}{}% 19
+\BOOKMARK [2][]{Outline0.20}{Greibach Normal Form}{}% 20
+\BOOKMARK [2][]{Outline0.21}{Converting to Greibach Normal Form}{}% 21
+\BOOKMARK [2][]{Outline0.22}{Consequences of Greibach Normal Form}{}% 22
+\BOOKMARK [2][]{Outline0.23}{Pumping Lemma for CF Languages}{}% 23
+\BOOKMARK [2][]{Outline0.24}{Pumping Lemma for CF Languages}{}% 24
+\BOOKMARK [2][]{Outline0.25}{Proof that L = 0n1n2n is not CF}{}% 25
+\BOOKMARK [2][]{Outline0.26}{Pumping Lemma exercises \(some are hard\)}{}% 26
+\BOOKMARK [2][]{Outline0.27}{CF Languages are closed under union, product, and closure}{}% 27
+\BOOKMARK [2][]{Outline0.28}{CF languages are NOT closed under complement}{}% 28
+\BOOKMARK [2][]{Outline0.29}{CF languages are NOT closed under intersection}{}% 29
+\BOOKMARK [2][]{Outline0.30}{The intersection of a CF language and a regular language is CF}{}% 30

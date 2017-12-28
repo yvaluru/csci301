@@ -1,0 +1,11 @@
+\frametitle{LR parsing exercises} 
+
+Redo all the solved examples.  Also,
+find DFAs and tables for the following languages, and trace some
+parses:
+\bi
+\li $S \ar a \mid b \mid c$
+\li $S \ar aSa \mid b$
+\li $S \ar ABC $\\
+$A\ar a$\\$B\ar b$\\$C\ar c$
+\ei

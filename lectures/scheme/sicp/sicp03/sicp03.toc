@@ -1,0 +1,12 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Higher Order Procedures}{2}{0}{1}
+\beamer@sectionintoc {2}{Summing}{3}{0}{2}
+\beamer@sectionintoc {3}{Sum examples}{6}{0}{3}
+\beamer@sectionintoc {4}{Procedures that return procedures}{12}{0}{4}
+\beamer@sectionintoc {5}{Procedures that return procedures}{13}{0}{5}
+\beamer@sectionintoc {6}{Multiplying: A Different Take on Sum}{14}{0}{6}
+\beamer@sectionintoc {7}{Prod examples}{15}{0}{7}
+\beamer@sectionintoc {8}{Let there be local variables}{19}{0}{8}
+\beamer@sectionintoc {9}{Let example}{20}{0}{9}
+\beamer@sectionintoc {10}{Let examples}{21}{0}{10}

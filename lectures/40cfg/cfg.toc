@@ -1,0 +1,32 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Readings}{2}{0}{1}
+\beamer@sectionintoc {2}{Context Free Grammar}{3}{0}{2}
+\beamer@sectionintoc {3}{Context Free Grammar Examples}{4}{0}{3}
+\beamer@sectionintoc {4}{Context Free Grammar for Arithmetic Expressions}{5}{0}{4}
+\beamer@sectionintoc {5}{Context Free Grammar for Programming Language}{6}{0}{5}
+\beamer@sectionintoc {6}{Derivations}{7}{0}{6}
+\beamer@sectionintoc {7}{Derivations}{9}{0}{7}
+\beamer@sectionintoc {8}{All regular languages are context free languages}{10}{0}{8}
+\beamer@sectionintoc {9}{Generate All Possible Sentences from a CF grammar}{11}{0}{9}
+\beamer@sectionintoc {10}{Generate All Possible Sentences from a CF grammar}{12}{0}{10}
+\beamer@sectionintoc {11}{Generate All Possible Sentences from a CF grammar}{13}{0}{11}
+\beamer@sectionintoc {12}{CFG problems}{14}{0}{12}
+\beamer@sectionintoc {13}{Removing $\ensuremath {\epsilon }$ from grammars}{15}{0}{13}
+\beamer@sectionintoc {14}{Removing $\ensuremath {\epsilon }$ from grammars}{16}{0}{14}
+\beamer@sectionintoc {15}{Chomsky Normal Form}{17}{0}{15}
+\beamer@sectionintoc {16}{Converting to Chomsky Normal Form}{18}{0}{16}
+\beamer@sectionintoc {17}{Example converting to Chomsky Normal Form}{19}{0}{17}
+\beamer@sectionintoc {18}{Note on Eliminating Unit Rules}{20}{0}{18}
+\beamer@sectionintoc {19}{Consequences of Chomsky Normal Form}{21}{0}{19}
+\beamer@sectionintoc {20}{Greibach Normal Form}{23}{0}{20}
+\beamer@sectionintoc {21}{Converting to Greibach Normal Form}{24}{0}{21}
+\beamer@sectionintoc {22}{Consequences of Greibach Normal Form}{25}{0}{22}
+\beamer@sectionintoc {23}{Pumping Lemma for CF Languages}{26}{0}{23}
+\beamer@sectionintoc {24}{Pumping Lemma for CF Languages}{27}{0}{24}
+\beamer@sectionintoc {25}{Proof that $L = a^nb^nc^n$ is not CF}{28}{0}{25}
+\beamer@sectionintoc {26}{Pumping Lemma exercises (some are hard)}{29}{0}{26}
+\beamer@sectionintoc {27}{CF Languages are closed under union, product, and closure}{30}{0}{27}
+\beamer@sectionintoc {28}{CF languages are NOT closed under complement}{31}{0}{28}
+\beamer@sectionintoc {29}{CF languages are NOT closed under intersection}{32}{0}{29}
+\beamer@sectionintoc {30}{The intersection of a CF language and a regular language is CF}{33}{0}{30}

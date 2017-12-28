@@ -1,0 +1,274 @@
+\documentclass{beamer}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{graphicx}
+\newtheorem{theo}{Theorem}[section]
+
+\newcommand{\myfig}[1]{\centerline{\includegraphics[scale=0.25]{figures/#1.png}}}
+
+\newcommand{\trans}[5]{
+\begin{tabular}{|c|c|c|c|c|}\hline
+#1 & #2 & #3 & #4 & #5 \\\hline
+\end{tabular}
+}
+
+\newcommand{\arr}{&\rightarrow&}
+\newcommand{\darr}{&\Rightarrow&}
+\newcommand{\ar}{\rightarrow}
+\newcommand{\dar}{\Rightarrow}
+\newcommand{\bee}{\begin{eqnarray*}}
+\newcommand{\eee}{\end{eqnarray*}}
+\newcommand{\lmb}{\ensuremath{\lambda}}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ii}{\item}
+\newcommand{\ei}{\end{itemize}}
+
+\newcommand{\sect}[1]{
+\section{#1}
+\begin{frame}[fragile]\frametitle{#1}
+}
+
+\mode<presentation>
+{
+%  \usetheme{Madrid}
+  % or ...
+
+%  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\usepackage[english]{babel}
+
+\usepackage[latin1]{inputenc}
+
+\title
+{
+SICP Notes 03
+}
+
+\subtitle{
+\url{https://mitpress.mit.edu/sicp/}\\
+\url{http://www.aduni.org/courses/sicp/index.php}
+} % (optional)
+
+\author[Geoffrey Matthews]
+{Geoffrey Matthews}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[WWU/CS]
+{
+  Department of Computer Science\\
+  Western Washington University
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date{\today}
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+%\pgfdeclareimage[height=0.5cm]{university-logo}{WWULogoProColor}
+%\logo{\pgfuseimage{university-logo}}
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\newcommand{\myref}[1]{\small\item\url{#1}}
+\newcommand{\myreft}[1]{\footnotesize\item\url{#1}}
+
+%\begin{frame}
+%  \frametitle{Outline}
+%  \tableofcontents
+%  % You might wish to add the option [pausesections]
+%\end{frame}
+
+
+\sect{Higher Order Procedures}
+\bi
+\ii
+Higher-order procedures are procedures that manipulate other procedures.
+\ii
+Procedures have first-class status in Scheme.
+\bi
+\ii
+They may be named by variables.
+\ii
+They may be passed as arguments to procedures.
+\ii
+They may be returned as the results of procedures.
+\ii
+They may be included in data structures.
+\ei
+\ei
+\end{frame}
+\sect{Summing}
+\[\sum_{i=1}^{5} i^2 = 1^2 + 2^2 + 3^2 + 4^2 + 5^2\]\pause
+\bi
+\ii If we were to write \verb|sum| as a procedure, what are the parameters?
+\ei\pause
+\begin{Verbatim}
+(define sum
+   (lambda (func a b)
+      (if (> a b)
+          0
+          (+ (func a)
+             (sum func
+                  (+ 1 a)
+                  b)))))
+\end{Verbatim}
+
+
+\end{frame}
+\sect{Sum examples}
+How do we compute $\sum_{i=1}^{n}i$?\pause
+\begin{Verbatim}
+(sum (lambda (i) i)
+     1
+     n)
+\end{Verbatim}
+How do we compute $\sum_{i=1}^{n}\frac{1}{i}$?\pause
+\begin{Verbatim}
+(sum (lambda (i) (/ 1 i))
+     1
+     n)
+\end{Verbatim}
+How about $\sum_{i=1}^{n}i^3+2i$?\pause
+\begin{Verbatim}
+(sum (lambda (x) (+ (* x x x) (* 2 x)))
+     1
+     n)
+\end{Verbatim}
+\end{frame}
+
+\sect{Procedures that return procedures}
+
+Here is a procedure for exponentiation:
+\begin{Verbatim}
+(define expt
+   (lambda (b n)
+      (if (= n 0)
+          1
+          (* b (expt b (- n 1))))))
+\end{Verbatim}
+How could we use this procedure to allow us to create procedures to
+calculate $n^2$, $n^3$, $n^4$, {\em etc.}? 
+\end{frame}
+\sect{Procedures that return procedures}
+\begin{Verbatim}
+(define make-expt
+   (lambda (n)
+      (lambda (b) (expt b n))))
+\end{Verbatim}
+Now, let's use the make-expt procedure we just wrote to define square.
+\begin{Verbatim}
+(define square
+   (make-expt 2))
+\end{Verbatim}
+And use make-expt to write cube:
+\begin{Verbatim}
+(define cube
+   (make-expt 3))
+\end{Verbatim}
+How do we define a procedure to return $n^8$?
+\begin{Verbatim}
+(define power-8
+   (make-expt 8))
+\end{Verbatim}
+\end{frame}
+
+
+\sect{Multiplying: A Different Take on Sum}
+\[
+\prod_{i=1}^{5}i^2 = (1^2)(2^2)(3^2)(4^2)(5^2)
+\]
+\begin{Verbatim}
+(define prod
+   (lambda (term a b)
+      (if (> a b)
+          1
+          (* (term a)
+             (prod term
+                   (+ 1 a)
+                   b)))))
+\end{Verbatim}
+\end{frame}
+\sect{Prod examples}
+Use prod to calculate $\prod_{i=1}^{n}\frac{1}{i}$
+\begin{Verbatim}
+(prod (lambda (x) (/ 1 x))
+     1
+     10)
+\end{Verbatim}
+$\prod_{i=2}^{100}i^2$
+\begin{Verbatim}
+(prod (lambda (x) (* x x))
+     2
+     100)
+\end{Verbatim}
+\end{frame}
+
+\sect{Let there be local variables}
+
+The general format of the let statement is
+\begin{Verbatim}
+(let ((<var1> <exp1>)
+      (<var2> <exp2>)
+      ...
+      (<varn> <expn>))
+  <body>)
+\end{Verbatim}
+The let statement is equivalent to the following
+\begin{Verbatim}
+((lambda (<var1> <var2> ... <varn>)
+     <body>)
+ <exp1>
+ <exp2>
+ ... 
+ <expn>)
+\end{Verbatim}
+\end{frame}
+\sect{Let example}
+For example,
+\begin{Verbatim}
+(let ((a 2)
+      (b 3) 
+      (c 4))
+   (+ a b c))
+\end{Verbatim}
+de-sugars into
+\begin{Verbatim}
+((lambda (a b c) (+ a b c)) 2 3 4)
+\end{Verbatim}
+which would return 9.
+\end{frame}
+\sect{Let examples}
+\begin{Verbatim}
+(define procedure-with-let
+   (lambda (x)
+      (let ((a (+ x 2))
+            (b (* x 3)))
+         (+ a b))))
+\end{Verbatim}
+What will be returned by the following call?
+\begin{Verbatim}
+(procedure-with-let 4)
+\end{Verbatim}
+\pause
+18
+
+\end{frame}
+\end{document}

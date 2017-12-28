@@ -1,0 +1,26 @@
+\BOOKMARK [2][]{Outline0.1}{Readings}{}% 1
+\BOOKMARK [2][]{Outline0.2}{Top-down Parsing of CFGs}{}% 2
+\BOOKMARK [2][]{Outline0.3}{PDA for any grammar}{}% 3
+\BOOKMARK [2][]{Outline0.4}{PDA for any grammar}{}% 4
+\BOOKMARK [2][]{Outline0.5}{LL\(k\) grammars: deterministic PDAs}{}% 5
+\BOOKMARK [2][]{Outline0.6}{An LL\(1\) grammar and chart for anbcn}{}% 6
+\BOOKMARK [2][]{Outline0.7}{Another LL\(1\) grammar and chart}{}% 7
+\BOOKMARK [2][]{Outline0.8}{LL\(1\) parsing by recursive descent}{}% 8
+\BOOKMARK [2][]{Outline0.9}{LL\(1\) parsing by recursive descent}{}% 9
+\BOOKMARK [2][]{Outline0.10}{A non-LL\(1\) grammar for ambnc, m1 and n 0}{}% 10
+\BOOKMARK [2][]{Outline0.11}{Sometimes we can find LL\(1\) to replace a non-LL\(1\)}{}% 11
+\BOOKMARK [2][]{Outline0.12}{An LL\(k\) grammar whose language has no LL\(k-1\) grammar}{}% 12
+\BOOKMARK [2][]{Outline0.13}{A deterministic language with no LL\(k\) grammar}{}% 13
+\BOOKMARK [2][]{Outline0.14}{An LL\(1\) grammar without terminals on RHS}{}% 14
+\BOOKMARK [2][]{Outline0.15}{Transforming some LL\(k\) to LL\(1\) by Left-Factoring}{}% 15
+\BOOKMARK [2][]{Outline0.16}{Left recursion is not LL\(k\)}{}% 16
+\BOOKMARK [2][]{Outline0.17}{Immediate left recursion can be removed}{}% 17
+\BOOKMARK [2][]{Outline0.18}{More general immediate left recursion}{}% 18
+\BOOKMARK [2][]{Outline0.19}{Removing left recursion example}{}% 19
+\BOOKMARK [2][]{Outline0.20}{Removing left recursion from arithmetic, \(a + a\) * a}{}% 20
+\BOOKMARK [2][]{Outline0.21}{Remove the left recursion}{}% 21
+\BOOKMARK [2][]{Outline0.22}{What happened to the tree?}{}% 22
+\BOOKMARK [2][]{Outline0.23}{Indirect left recursion}{}% 23
+\BOOKMARK [2][]{Outline0.24}{Removing indirect left recursion}{}% 24
+\BOOKMARK [2][]{Outline0.25}{Removing indirect left recursion}{}% 25
+\BOOKMARK [2][]{Outline0.26}{LL\(k\) problems}{}% 26

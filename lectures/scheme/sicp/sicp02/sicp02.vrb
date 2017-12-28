@@ -1,0 +1,18 @@
+\frametitle{Writing our own \tt if} 
+
+\begin{Verbatim}
+(define fact
+   (lambda (n)
+      (if (= n 0)
+          1
+          (* n (fact (- n 1))))))
+\end{Verbatim}
+\bi
+\ii
+What if we use new-if instead of the special form if?
+\pause
+\ii
+We'll get an infinite loop, since (* n (fact (- n 1))) will be
+evaluated every time, even if we have hit the base case.
+\ei
+

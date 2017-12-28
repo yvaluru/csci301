@@ -1,0 +1,35 @@
+\documentclass{article}
+\title{SICP in DrRacket}
+\author{Geoffrey Matthews}
+\begin{document}
+\maketitle
+
+\begin{itemize}
+\item
+Most code from the SICP book can be run in DrRacket by using the R5RS
+language.  The easiest way to use this language is to use the Racket
+Language (the default in the ``Choose Language'' panel), and insert
+the line:
+\begin{verbatim}
+#lang r5rs
+\end{verbatim}
+at the beginning of each file.  This will work except for the picture
+language and examples that involve redefining initial bindings.
+
+\item
+You can also run the R5RS language by choosing ``Other Languages'' from
+the ``Choose Language'' panel and clicking R5RS.  Doing this allows
+you to go to the ``Show Details'' panel and uncheck the ``Disallow
+redefinition of initial bindings'' checkbox, so you can now redefine
+symbols as in some of the examples. Note that if you do this you
+{\em cannot} have a first line starting with \verb|#lang|.  Remove it,
+or comment it out.
+
+\item Note that you still cannot use the picture language.  There
+  are libraries you can install for this, but we won't be using
+  it in this class.
+
+  \item But the best way to run the sicp examples is to use the sicp language.  
+\end{itemize}
+
+\end{document}

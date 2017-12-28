@@ -1,0 +1,15 @@
+#lang racket
+
+(define d
+  (lambda (f)
+    (let* ((delta 0.00001)
+           (two-delta (* 2 delta)))
+      (lambda (x)
+        (/ (- (f (+ x delta)) (f (- x delta)))
+           two-delta)))))
+
+(displayln ((d (lambda (x) (* x x))) 3))
+
+(displayln (cos 1.11))
+(displayln ((d sin) 1.11))
+

@@ -1,0 +1,16 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Every powerful language has}{2}{0}{1}
+\beamer@sectionintoc {2}{Scheme does the following three things:}{3}{0}{2}
+\beamer@sectionintoc {3}{There are 4 types of expressions:}{4}{0}{3}
+\beamer@sectionintoc {4}{Mantras}{5}{0}{4}
+\beamer@sectionintoc {5}{Lambda}{6}{0}{5}
+\beamer@sectionintoc {6}{Define}{7}{0}{6}
+\beamer@sectionintoc {7}{Define}{8}{0}{7}
+\beamer@sectionintoc {8}{Define}{9}{0}{8}
+\beamer@sectionintoc {9}{Special forms}{10}{0}{9}
+\beamer@sectionintoc {10}{Special Forms Have Special Rules}{11}{0}{10}
+\beamer@sectionintoc {11}{\tt and}{12}{0}{11}
+\beamer@sectionintoc {12}{\tt or}{13}{0}{12}
+\beamer@sectionintoc {13}{\tt if}{14}{0}{13}
+\beamer@sectionintoc {14}{\tt cond}{15}{0}{14}

@@ -1,0 +1,215 @@
+ArsDigita University, Structure and Interpretation of Computer Programs
+
+Lecture Notes for Lecture 2 -- 2 October 2000
+
+Topics covered in today's lecture:
+Mantra Review
+The Substitution Model
+Applicative and Normal Order
+Writing our own if
+Mantra Review
+
+Every expression has a value (exceptions: errors, infinite loops and define)
+To find the value of a combination,
+Find the values of all of the subexpressions, in any order
+Apply the value of the first to the values of the rest
+The value of a lambda expession is a procedure
+The Substitution Model: You can evaluate it from here
+
+Recall the second mantra:
+To find the value of a combination,
+Find the values of all of the subexpressions, in any order
+Apply the value of the first to the values of the rest
+To apply a compound procedure to arguments using the substitution model, evaluate the body of the procedure with each formal parameter replaced by the corresponding argument.
+
+To review:
+
+(lambda (x) (* x x))
+What is/are the parameters? 
+x is the only parameter in the parameter list (x).
+
+What is the body?
+(* x x) is the body of the lambda expression.
+
+Substitution Model: To apply a compound procedure to arguments, evaluate the body of the procedure with each formal parameter replaced by the corresponding argument.
+
+Substitution Examples
+
+
+(define absolute-value
+   (lambda (n)
+      (if (< n 0)
+          (- n)
+          n)
+
+Using the substitution model to evaluate (absolute-value (+ 3 -8)):
+(Note: this appeared on the board in a different format. The evaluated expressions were drawn in boxes. Below, the evaluated expressions have "**" before and after them.)
+
+
+(absolute-value (**add** 3 -8))
+(absolute-value (**add** 3 **-8**))
+(absolute-value (**add** **3** **-8**))
+(absolute-value **-5**)
+(**proc (n) (if (< n 0) (- n) n))** **-5**)
+(if (< **-5** 0) (- **-5**) **-5**))
+(**less than** **-5** 0)
+(**less than** **-5** **0**)
+**true**
+(**negate** **-5**)
+**5**
+
+Computing the Euclidean distance between two points:
+
+
+(define square
+   (lambda (x) (* x x)))
+
+(define sum-squares
+   (lambda (x y) (+ (square x) (square y))))
+
+(define dist-between-pts
+   (lambda (x1 y1 x2 y2)
+      (sqrt (sum-squares (- x1 x2) (- y1 y2)))))
+Using the substitution model to evaluate (dist-between-pts 1 1 4 5):
+
+(dist-between-pts 1 1 4 5)
+(dist-between-pts 1 **1** 4 5)
+(dist-between-pts 1 **1** **4** 5)
+(dist-between-pts **1** **1** **4** 5)
+(**proc (x1 y1 x2 y2) (sqrt (sum-squares (- x1 x2) (- y1 y2)))** **1** **1** **4** 5)
+(**proc (x1 y1 x2 y2) (sqrt (sum-squares (- x1 x2) (- y1 y2)))** **1** **1** **4** **5**)
+(sqrt (sum-squares (- **1** **4**) (- **1** **5**)))
+(sqrt (sum-squares (**sub** **1** **4**) (- **1** **5**)))
+(sqrt (sum-squares **-3** (- **1** **5**)))
+(sqrt (sum-squares **-3** (**sub** **1** **5**)))
+(sqrt (sum-squares **-3** **-4**))
+(sqrt (**proc (x y) (+ (square x) (square y))**  **-3** **-4**))
+(sqrt (+ (square **-3**) (square **-4**)))
+(sqrt (+ (square **-3**) (**proc (x) (* x x)**  **-4**)))
+(sqrt (+ (square **-3**) (* **-4** **-4**)))
+(sqrt (+ (square **-3**) (**mul** **-4** **-4**)))
+(sqrt (+ (square **-3**) **16**))
+(sqrt (**add** (square **-3**) **16**))
+(sqrt (**add** (**proc (x) (* x x)** **-3**) **16**))
+(sqrt (**add** (* **-3** **-3**) **16**))
+(sqrt (**add** (**mul** **-3** **-3**) **16**))
+(sqrt (**add** **9** **16**))
+(sqrt **25**)
+(**sqrt** **25**)
+**5**
+Applicative and Normal Order
+
+Applicative Order: Evaluate the arguments and then apply the value of the first to the value of the rest. Everything is evaluated, whether or not we use it. This is the method Scheme uses and is the reason that we need special forms.
+Normal Order: Fully expand, then reduce. Don't evaluate operands until they are needed. How are these different? Let's evaluate (sum-squares (+ 5 1) (* 6 2)) using applicative order first:
+
+
+(sum-squares (+ 5 1) (* 6 2))
+(sum-squares (+ **5** 1) (* 6 2))
+(sum-squares (**add** **5** 1) (* 6 2))
+(sum-squares (**add** **5** **1**) (* 6 2))
+(sum-squares **6** (* 6 2))
+(sum-squares **6** (**mul** 6 2))
+(sum-squares **6** (**mul** **6** 2))
+(sum-squares **6** (**mul** **6** **2**))
+(sum-squares **6** **12**)
+(**proc (x y) (+ (square x) (square y))** **6** **12**)
+(+ (square **6**) (square **12))
+(**add** (square **6**) (square **12))
+(**add** (square **6**) (**proc (x) (* x x)** **12))
+(**add** (square **6**) (* **12** **12))
+(**add** (square **6**) (**mul** **12** **12))
+(**add** (square **6**) **144**)
+(**add** (**proc (x) (* x x)** **6**) **144**)
+(**add** (* **6** **6**) **144**)
+(**add** (**mul** **6** **6**) **144**)
+(**add** **36** **144**)
+**180**
+And now let's evaluate (sum-squares (+ 5 1) (* 6 2) using normal order:
+
+(sum-squares (+ 5 1) (* 6 2))
+(**proc (x y) (+ (square x) (square y))** (+ 5 1) (* 6 2))
+(+ (square (+ 5 1)) (square (* 6 2)))
+(+ (**proc (x) (* x x)** (+ 5 1)) (square (* 6 2)))
+(+ (* (+ 5 1) (+ 5 1)) (square (* 6 2)))
+(+ (* (+ 5 1) (+ 5 1)) (**proc (x) (* x x)** (* 6 2)))
+(+ (* (+ 5 1) (+ 5 1)) (* (* 6 2) (* 6 2)))
+Now that we have fully expanded, we can evaluate:
+
+(+ (* (+ 5 1) (+ 5 1)) (* (* 6 2) (* 6 2)))
+(+ (* (**add** 5 1) (+ 5 1)) (* (* 6 2) (* 6 2)))
+(+ (* (**add** **5** 1) (+ 5 1)) (* (* 6 2) (* 6 2)))
+(+ (* (**add** **5** **1**) (+ 5 1)) (* (* 6 2) (* 6 2)))
+(+ (* **6** (+ 5 1)) (* (* 6 2) (* 6 2)))
+(+ (* **6** (+ 5 1)) (* (* **6** 2) (* 6 2)))
+(+ (* **6** (+ 5 1)) (* (**mul** **6** 2) (* 6 2)))
+(+ (* **6** (+ 5 1)) (* (**mul** **6** **2**) (* 6 2)))
+(+ (* **6** (+ 5 1)) (* **12** (* 6 2)))
+(+ (* **6** (+ 5 1)) (* **12** (* 6 **2**)))
+(+ (* **6** (+ 5 1)) (* **12** (* **6** **2**)))
+(+ (* **6** (+ 5 1)) (* **12** (**mul** **6** **2**)))
+(+ (* **6** (+ 5 1)) (* **12** **12**))
+(+ (* **6** (+ 5 1)) (**mul** **12** **12**))
+(+ (* **6** (+ 5 1)) **144**) 
+(+ (* **6** (+ **5** 1)) **144**) 
+(+ (* **6** (+ **5** **1**)) **144**) 
+(+ (* **6** (**add** **5** **1**)) **144**) 
+(+ (* **6** **6**) **144**) 
+(+ (**mul** **6** **6**) **144**) 
+(+ **36** **144**) 
+(**add** **36** **144**) 
+**180**
+Normal order is not as efficient as applicative order. We needed to evaluate (+ 5 1) and (* 6 2) twice each using normal order, instead of once each with applicative order. How can we test if Scheme is applicative or normal order?
+
+(define p (lambda () (p)))
+What does this function do? It calls itself repeatedly, causing an infinite loop.
+
+(define test 
+   (lambda (x y)
+      (if (= x 0) 
+          0
+          y)))
+
+(test 0 (p))
+What happens with applicative order?
+We get an infinite loop
+
+What happens with normal order?
+
+It returns 0.
+
+Writing our own if
+
+What if if were not a special form?
+
+(define new-if
+   (lambda (predicate consequent alternative)
+      (cond (predicate consequent)
+            (else alternative))))
+What happens when we evaluate (new-if (> 3 2) 0 2)?
+
+(new-if (> 3 2) 0 2)
+(new-if (> 3 2) **0** 2)
+(new-if (> 3 2) **0** **2**)
+(new-if (**less than** 3 2) **0** **2**)
+(new-if (**less than** 3 **2**) **0** **2**)
+(new-if (**less than** **3** **2**) **0** **2**)
+(new-if **true** **0** **2**)
+(**proc (pred cons alt) (cond (pred cons) (else alt))**  **true** **0** **2**)
+(cond (**true** **0**) (else **2**))
+**0**
+No real problems so far. Recall fact from Problem Set 1:
+
+(define fact
+   (lambda (n)
+      (if (= n 0)
+          1
+          (* n (fact (- n 1))))))
+What if we use new-if instead of the special form if?
+
+(define fact
+   (lambda (n)
+      (new-if (= n 0)
+          1
+          (* n (fact (- n 1))))))
+We'll get an infinite loop, since (* n (fact (- n 1))) will be evaluated every time, even if we have hit the base case. You may want to follow the substitution model through to convince yourself of this.
+

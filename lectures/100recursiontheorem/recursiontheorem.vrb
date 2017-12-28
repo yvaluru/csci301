@@ -1,0 +1,18 @@
+\frametitle{ Recursion theorem makes undecidability easier to prove }
+\[
+Halt = \{ \langle M,w\rangle : \mbox{$M$ is a TM that terminates on $w$}\}
+\]
+
+Assume there is a TM $H$ that decides this language.
+
+Construct the following TM $Q$:
+
+\centerline{\fbox{\parbox{3in}{
+    $Q$ : On input $w$:
+    \begin{itemize}
+      \item Obtain description of self, $\langle Q \rangle$.
+      \item Run $H$ on $\langle Q, w\rangle$.
+      \item If $H$ accepts, loop forever, else halt.
+    \end{itemize}
+}}}
+

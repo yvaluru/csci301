@@ -1,0 +1,8 @@
+\frametitle{The intersection of a CF language and a regular language is CF} 
+\bi
+\li Given a PDA for one and a DFSA for the other:
+\li Create a new PDA with states that are the cross product of the
+states of the two machines.
+\li As input is processed, run both machines in parallel.
+\li Accept if both accept.
+\ei

@@ -1,0 +1,21 @@
+\frametitle{\tt cond} 
+\begin{verbatim}
+(cond (<pred1> <exp1>)
+      (<pred2> <exp2>)
+      ...
+      (else <expn>))
+\end{verbatim}
+
+\bi
+\ii
+The first predicate is evaluated.
+\ii If it is anything other than \verb|#f|,
+the value of the first expression will be returned.
+\ii If it is \verb|#f|, the second predicate will be evaluated.
+\ii The computer will continue to evaluate the predicates until one is
+something other than \verb|#f|.
+\ii The value of the expression corresponding to the non-\verb|#f| predicate
+will be returned.
+\ii Note that the \verb|else| will always be true ({\em i.e.} not \verb|#f|).
+\ei
+

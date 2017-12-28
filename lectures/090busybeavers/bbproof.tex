@@ -1,0 +1,143 @@
+\documentclass[12pt]{article}
+\usepackage{pstricks,pst-node}
+\pagestyle{empty}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\begin{document}
+\centerline{\large Proof the Busy Beaver function is uncomputable}
+
+\begin{itemize}
+\item
+Let $bb(n)$ be the largest (finite) number of 1's output by a Turing Machine
+with $n$ states.
+\item
+Suppose there is a Turing Machine $M_{bb}$ that computes $bb(n)$, that is,
+starting with $n$ on the tape, the machine halts with $bb(n)$ on the tape.
+
+\psset{arrows=->,arrowscale=2,colsep=1.5}
+\begin{psmatrix}
+\rnode{N}{
+\begin{tabular}{ccc}\hline
+ & 111 & \\\hline
+ & $N$ & \\
+\end{tabular}
+}
+&
+\rnode{bbN}{
+\begin{tabular}{ccc}\hline
+ & 11111111 & \\\hline
+ & $bb(N)$ & \\
+\end{tabular}
+}
+
+\nccurve[angleA=-30,angleB=-150]{N}{bbN} \ncput*{$M_{bb}$}
+
+\end{psmatrix}
+
+\vspace{1cm}
+
+\item
+Let $g(n) = bb(2n)$.  We can build a TM for $g$ by starting with
+a machine that doubles the input, and then runs the machine  $M_{bb}$.
+
+\begin{psmatrix}
+\rnode{N}{
+\begin{tabular}{ccc}\hline
+ & 111 & \\\hline
+ & $N$ & \\
+\end{tabular}
+}
+&
+\rnode{NN}{
+\begin{tabular}{ccc}\hline
+ & 111111 & \\\hline
+ & $2N$ & \\
+\end{tabular}
+}
+&
+\rnode{bbN}{
+\begin{tabular}{ccc}\hline
+ & 11111111111 & \\\hline
+ & $bb(2N)$ & \\
+\end{tabular}
+}
+
+\nccurve[angleA=-30,angleB=-150]{N}{NN} \ncput*{$M_{2}$}
+\nccurve[angleA=-30,angleB=-150]{NN}{bbN} \ncput*{$M_{bb}$}
+
+\end{psmatrix}
+
+\vspace{1cm}
+
+
+\item
+Suppose the machine for $g$, $M_g$, which is a combination of $M_2$
+and $M_{bb}$,  has $k$ states.
+
+
+\item
+For any natural number $n$,
+we could build a new busy beaver machine that starts by 
+putting $n$ 1's on the tape, and then runs the $M_g$ machine.
+
+
+
+\begin{psmatrix}
+\rnode{blank}{
+\begin{tabular}{ccc}\hline
+ & ~~~ & \\\hline
+ & $\Lambda$ & \\
+\end{tabular}
+}
+&
+\rnode{N}{
+\begin{tabular}{ccc}\hline
+ & 111 & \\\hline
+ & $N$ & \\
+\end{tabular}
+}
+&
+\rnode{NN}{
+\begin{tabular}{ccc}\hline
+ & 111111 & \\\hline
+ & $2N$ & \\
+\end{tabular}
+}
+&
+\rnode{bbN}{
+\begin{tabular}{ccc}\hline
+ & 11111111111 & \\\hline
+ & $bb(2N)$ & \\
+\end{tabular}
+}
+
+\nccurve[angleA=-30,angleB=-150]{blank}{N} \ncput*{$M_{n}$}
+\nccurve[angleA=-30,angleB=-150]{N}{NN} \ncput*{$M_{2}$}
+\nccurve[angleA=-30,angleB=-150]{NN}{bbN} \ncput*{$M_{bb}$}
+
+\end{psmatrix}
+
+\vspace{1cm}
+
+\item Now note:
+\begin{itemize}
+\item We can build this busy beaver with $n+k$ states.
+\item The output of this busy beaver is $g(n) = bb(2n)$ 1's.
+\end{itemize}
+
+\item Now pick $n=2k$.  Then we can build a machine with $n+k = 3k$
+states and its output is $bb(2(2k)) = bb(4k)$ 1's.
+
+\item Therefore, if $M_{bb}$ exists, 
+we could build a machine with $3k$ states that output
+as many 1's as you can possibly do with $4k$ states. 
+
+See the problem? 
+
+\end{itemize}
+
+\end{document}
+
+
