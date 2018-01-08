@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.3)  8 JAN 2018 11:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.3)  8 JAN 2018 10:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**learning
-(./learning.tex
+**020scheme
+(./020scheme.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 10 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -695,61 +695,143 @@ Package: beamerinnerthemedefault 2014/06/30  (rcs-revision 580088513a67)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemede
 fault.sty
 Package: beamerouterthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeSingapo
-re.sty
-Package: beamerthemeSingapore 2010/06/17  (rcs-revision d02a7cf4d8ae)
-
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthememi
-niframes.sty
-Package: beamerouterthememiniframes 2010/06/17  (rcs-revision d02a7cf4d8ae)
-)) (/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
-Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
-\symlasy=\mathgroup6
-LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
-(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+))) (/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box53
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen188
+\pgf@nodesepend=\dimen189
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen190
+\pgffor@skip=\dimen191
+\pgffor@stack=\toks43
+\pgffor@toks=\toks44
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count153
+\pgfplotmarksize=\dimen192
+)
+\tikz@lastx=\dimen193
+\tikz@lasty=\dimen194
+\tikz@lastxsaved=\dimen195
+\tikz@lastysaved=\dimen196
+\tikzleveldistance=\dimen197
+\tikzsiblingdistance=\dimen198
+\tikz@figbox=\box54
+\tikz@figbox@bg=\box55
+\tikz@tempbox=\box56
+\tikz@tempbox@bg=\box57
+\tikztreelevel=\count154
+\tikznumberofchildren=\count155
+\tikznumberofcurrentchild=\count156
+\tikz@fig@count=\count157
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count158
+\pgfmatrixcurrentcolumn=\count159
+\pgf@matrix@numberofcolumns=\count160
+)
+\tikz@expandcount=\count161
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/tikz-qtree/tikz-qtree.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tikz-qtree/pgftree.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tikz-qtree/pgfsubpic.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tikz-qtree/pgfsubpic.tex
+\pgf@subpicminx=\dimen199
+\pgf@subpicminy=\dimen256
+\pgf@subpicmaxx=\dimen257
+\pgf@subpicmaxy=\dimen258
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tikz-qtree/pgftree.tex
+\levelsep=\dimen259
+\subtreesep=\dimen260
+\smuggle@levelsep=\dimen261
+\smuggle@subtreesep=\dimen262
+\this@levelsep=\dimen263
+\this@subtreesep=\dimen264
+\pgftree@childx=\dimen265
+\pgftree@savechildx=\dimen266
+\pgftree@childy=\dimen267
+\pgftree@savechildy=\dimen268
+\pgftree@childi=\count162
+\pgftree@savechildi=\count163
+\pgftree@level=\count164
+\pgftree@depth=\dimen269
+\pgf@subpic@hbox@children=\box58
+\pgf@subpic@minx@children=\dimen270
+\pgf@subpic@miny@children=\dimen271
+\pgf@subpic@maxx@children=\dimen272
+\pgf@subpic@maxy@children=\dimen273
+\pgftree@lastchildx=\dimen274
+\pgftree@lastchildy=\dimen275
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tikz-qtree/tikz-qtree.tex
+\@result=\toks45
+\child@list=\toks46
+\root@node=\toks47
+))
 (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count153
+\FV@CodeLineNo=\count165
 \FV@InFile=\read2
-\FV@TabBox=\box53
-\c@FancyVerbLine=\count154
-\FV@StepNumber=\count155
+\FV@TabBox=\box59
+\c@FancyVerbLine=\count166
+\FV@StepNumber=\count167
 \FV@OutFile=\write5
-)
+) (./020scheme.aux)
+\openout1 = `020scheme.aux'.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 34.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 34.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 34.
-
-(./learning.aux)
-\openout1 = `learning.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -787,17 +869,17 @@ LaTeX Font Info:    ... okay on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count156
-\scratchdimen=\dimen188
-\scratchbox=\box54
-\nofMPsegments=\count157
-\nofMParguments=\count158
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count159
-\MPscratchDim=\dimen189
-\MPnumerator=\count160
-\makeMPintoPDFobject=\count161
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count168
+\scratchdimen=\dimen276
+\scratchbox=\box60
+\nofMPsegments=\count169
+\nofMParguments=\count170
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count171
+\MPscratchDim=\dimen277
+\MPnumerator=\count172
+\makeMPintoPDFobject=\count173
+\everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -814,8 +896,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 38.
+\AtBeginShipoutBox=\box61
+Package hyperref Info: Link coloring OFF on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -823,58 +905,58 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count162
+\c@section@level=\count174
 )
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
 
-(./learning.out) (./learning.out)
+(./020scheme.out) (./020scheme.out)
 \@outlinefile=\write6
-\openout6 = `learning.out'.
+\openout6 = `020scheme.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 38.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 45.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 38.
-\symnumbers=\mathgroup7
-\sympureletters=\mathgroup8
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 45.
+\symnumbers=\mathgroup6
+\sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 38.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 38.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 38.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 38.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 38.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 38.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 38.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 38.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 38.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 38.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 45.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 38.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 38.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 45.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 38.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 45.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 38.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 38.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 38.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 38.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 38.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 38.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -900,270 +982,162 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 38.
- (./learning.nav)
+LaTeX Info: Redefining \includegraphics on input line 45.
+ (./020scheme.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 42.
+(Font)              size <5> substituted on input line 48.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-\openout4 = `learning.vrb'.
+\openout4 = `020scheme.vrb'.
 
- (./learning.vrb
-<brainisfull.jpg, id=48, 257.2812pt x 233.1912pt>
-File: brainisfull.jpg Graphic file (type jpg)
- <use brainisfull.jpg>
-Package pdftex.def Info: brainisfull.jpg used on input line 3.
-(pdftex.def)             Requested size: 199.37125pt x 180.70187pt.
-)
-[2
-
- <./brainisfull.jpg>]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb) [3
-
-]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 3.
-LaTeX Font Info:    No file OMScmss.fd. on input line 3.
-
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 3.
-
-) [4
-
-]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb) [5
-
-]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb) [6
-
-]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb
-<pennymemorytest.jpg, id=177, 759.83875pt x 468.75125pt>
-File: pennymemorytest.jpg Graphic file (type jpg)
-
-<use pennymemorytest.jpg>
-Package pdftex.def Info: pennymemorytest.jpg used on input line 2.
-(pdftex.def)             Requested size: 307.28987pt x 189.57141pt.
-) [7
-
- <./pennymemorytest.jpg>]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb
-<studyvstest.png, id=204, 405.515pt x 323.5725pt>
-File: studyvstest.png Graphic file (type png)
- <use studyvstest.png>
-Package pdftex.def Info: studyvstest.png used on input line 2.
-(pdftex.def)             Requested size: 276.559pt x 220.6781pt.
-)
-[8
-
- <./studyvstest.png (PNG copy)>]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb
-<test3times.png, id=231, 379.016pt x 285.795pt>
-File: test3times.png Graphic file (type png)
- <use test3times.png>
-Package pdftex.def Info: test3times.png used on input line 2.
-(pdftex.def)             Requested size: 307.28987pt x 231.71944pt.
-) [9
-
- <./test3times.png (PNG copy)>]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb
-<flashcards.jpg, id=258, 61.94571pt x 41.29715pt>
-File: flashcards.jpg Graphic file (type jpg)
- <use flashcards.jpg>
-Package pdftex.def Info: flashcards.jpg used on input line 5.
-(pdftex.def)             Requested size: 61.94554pt x 41.29704pt.
-
-Overfull \hbox (21.90005pt too wide) in paragraph at lines 4--6
-[]  
- []
-
-) [10
-
- <./flashcards.jpg>]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb
-<highlighting.jpg, id=284, 370.0224pt x 246.6816pt>
-File: highlighting.jpg Graphic file (type jpg)
- <use highlighting.jpg>
-Package pdftex.def Info: highlighting.jpg used on input line 8.
-(pdftex.def)             Requested size: 216.81pt x 144.53963pt.
-)
-[11
-
- <./highlighting.jpg>]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb
-<shootinganazimuth.jpg, id=310, 642.4pt x 427.5975pt>
-File: shootinganazimuth.jpg Graphic file (type jpg)
-
-<use shootinganazimuth.jpg>
-Package pdftex.def Info: shootinganazimuth.jpg used on input line 6.
-(pdftex.def)             Requested size: 216.81pt x 144.31119pt.
-) [12
-
- <./shootinganazimuth.jpg>]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb)
-[13
-
-]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb) [14
-
-]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb) [15
-
-]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <20.74> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 2.
-
-) [16
-
-]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb <ForgettingCurve.jpg, id=439, 521.95pt x 367.3725pt>
-File: ForgettingCurve.jpg Graphic file (type jpg)
-
-<use ForgettingCurve.jpg>
-Package pdftex.def Info: ForgettingCurve.jpg used on input line 3.
-(pdftex.def)             Requested size: 307.28987pt x 216.28822pt.
-) [17
-
- <./ForgettingCurve.jpg>]
-\openout4 = `learning.vrb'.
-
- (./learning.vrb
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+ (./020scheme.vrb
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+lasy on input line 4.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)) [18
+)) [2
 
 ]
-\openout4 = `learning.vrb'.
+\openout4 = `020scheme.vrb'.
 
- (./learning.vrb)
-[19
+
+(./020scheme.vrb) [3
 
 ]
-\openout4 = `learning.vrb'.
+\openout4 = `020scheme.vrb'.
 
- (./learning.vrb <pomodoro.jpg, id=521, 79.497pt x 79.497pt>
-File: pomodoro.jpg Graphic file (type jpg)
+ (./020scheme.vrb) [4
 
-<use pomodoro.jpg>
-Package pdftex.def Info: pomodoro.jpg used on input line 2.
-(pdftex.def)             Requested size: 79.4968pt x 79.4968pt.
-) [20
+]
+\openout4 = `020scheme.vrb'.
 
- <./pomodoro.jpg>]
-\openout4 = `learning.vrb'.
+ (./020scheme.vrb) [5
 
- (./learning.vrb
-<changeyourvocabulary.jpg, id=547, 722.7pt x 539.01375pt>
-File: changeyourvocabulary.jpg Graphic file (type jpg)
-
-<use changeyourvocabulary.jpg>
-Package pdftex.def Info: changeyourvocabulary.jpg used on input line 2.
-(pdftex.def)             Requested size: 307.28987pt x 229.18884pt.
-) [21
-
- <./changeyourvocabulary.jpg>]
-\openout4 = `learning.vrb'.
+]
+\openout4 = `020scheme.vrb'.
 
 
-(./learning.vrb) [22
+(./020scheme.vrb) [6
+
+]
+\openout4 = `020scheme.vrb'.
+
+ (./020scheme.vrb) [7
+
+]
+\openout4 = `020scheme.vrb'.
+
+ (./020scheme.vrb) [8
+
+]
+\openout4 = `020scheme.vrb'.
+
+
+(./020scheme.vrb
+Overfull \hbox (12.37762pt too wide) in paragraph at lines 7--18
+[][] 
+ []
+
+) [9
+
+]
+\openout4 = `020scheme.vrb'.
+
+ (./020scheme.vrb) [10
+
+]
+\openout4 = `020scheme.vrb'.
+
+ (./020scheme.vrb) [11
+
+]
+\openout4 = `020scheme.vrb'.
+
+ (./020scheme.vrb) [12
+
+]
+\openout4 = `020scheme.vrb'.
+
+
+(./020scheme.vrb) [13
+
+]
+\openout4 = `020scheme.vrb'.
+
+ (./020scheme.vrb) [14
+
+]
+\openout4 = `020scheme.vrb'.
+
+ (./020scheme.vrb
+Overfull \hbox (8.88795pt too wide) in paragraph at lines 10--10
+[]    \OT1/cmtt/m/n/10.95 (fixed-point (average-damp (lambda (y) (/ x y))))))[]
+ 
+ []
+
+) [15
 
 ]
 \tf@nav=\write7
-\openout7 = `learning.nav'.
+\openout7 = `020scheme.nav'.
 
 \tf@toc=\write8
-\openout8 = `learning.toc'.
+\openout8 = `020scheme.toc'.
 
 \tf@snm=\write9
-\openout9 = `learning.snm'.
+\openout9 = `020scheme.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 287.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 287.
- (./learning.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 287.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 287.
-Package rerunfilecheck Info: File `learning.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 270.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 270.
+ (./020scheme.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 270.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 270.
 
+
+Package rerunfilecheck Warning: File `020scheme.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `020scheme.out':
+(rerunfilecheck)             Before: 1E6634E07BD12C9F083AA19DC1B7574D;939
+(rerunfilecheck)             After:  9C126FB1F4D76F8DFD00A771EDDA3530;962.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 270.
  ) 
 Here is how much of TeX's memory you used:
- 17133 strings out of 494827
- 326349 string characters out of 6176977
- 393048 words of memory out of 5000000
- 19942 multiletter control sequences out of 15000+600000
- 13520 words of font info for 51 fonts, out of 8000000 for 9000
+ 20006 strings out of 494827
+ 391714 string characters out of 6176977
+ 459292 words of memory out of 5000000
+ 22789 multiletter control sequences out of 15000+600000
+ 13956 words of font info for 53 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 48i,15n,51p,404b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmtt10.pfb>
-Output written on learning.pdf (22 pages, 1048727 bytes).
+ 48i,14n,54p,385b,549s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmtt8.pfb>
+Output written on 020scheme.pdf (15 pages, 132320 bytes).
 PDF statistics:
- 639 PDF objects out of 1000 (max. 8388607)
- 583 compressed objects within 6 object streams
+ 511 PDF objects out of 1000 (max. 8388607)
+ 472 compressed objects within 5 object streams
  45 named destinations out of 1000 (max. 500000)
- 99 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 155 words of extra memory for PDF output out of 10000 (max. 10000000)
 

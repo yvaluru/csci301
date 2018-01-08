@@ -1,7 +1,0 @@
-\frametitle{increment-tree using map-tree} 
-\pause
-\begin{Verbatim}
-(define (increment-tree tree)
-  (map-tree tree inc))
-\end{Verbatim}
-
