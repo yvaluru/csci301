@@ -314,8 +314,8 @@ is called an {\bf open sentence}.
 \end{tabular}
 \vfill
 
-\begin{tabular}{|c|c||c|}\hline
-  $P$ & $Q$ & $P\then Q$ \\\hline\hline
+\begin{tabular}{|c|c|c|}\hline
+  $P$ & $Q$ & $P\then Q$ \\\hline
   $T$ & $T$ & $T$ \\\hline
   $T$ & $F$ & $F$ \\\hline
   $F$ & $T$ & $T$ \\\hline

@@ -1,0 +1,11 @@
+\frametitle{ Proving a Conditional Statement with Contradiction }
+
+\begin{center}
+
+  \fbox{\parbox{2in}{
+      {\bf Proposition} If $P$, then $Q$.\\
+      {\it Proof.}  Suppose $P$ and $\neg Q$.\\
+      $\vdots$\\
+      Therefore, $C \land \neg C$.\QED
+  }}
+\end{center}
