@@ -188,9 +188,10 @@ If $P$, then $Q$.
 
 \bfr{Example proof development}
 \fbox{\parbox{\textwidth}{
-    {\bf Proposition} If $x$ is odd, then $x^2$ is odd.
 
-    {\sl Proof.} Suppose $x$ is odd.
+    \mbox{\bf Proposition} If $x$ is odd, then $x^2$ is odd.
+
+    \mbox{\it Proof.} Suppose $x$ is odd.
 
     Then $x=2a+1$ for some $a\in\ints$, by definition of an odd number.
 
@@ -204,7 +205,8 @@ If $P$, then $Q$.
 
     Thus $x^2 = 2b+1$ for an integer $b$, by substitution.
 
-    Therefore $x^2$ is odd, by definition of an odd number. \QED}}
+    Therefore $x^2$ is odd, by definition of an odd number. \QED
+    }}
 \end{frame}
 
 
@@ -407,6 +409,41 @@ Therefore $7x+9$ is not even.
 \end{center}
 \end{frame}
 
+\bfr{Example Proof by Contradiction}
+
+{\bf Proposition}  If $a,b\in\ints$, then $a^2-4b\neq 2$.
+
+{\it Proof.}  Suppose this is false.
+\pause
+
+There exist $a,b\in\ints$ with $a^2-4b=2$.
+\pause
+
+Then $a^2 = 4b + 2 = 2(2b+1)$, is even.\\
+\pause
+So $a$ is even, so $a=2c$ for
+some $c\in\ints$.
+\pause
+\begin{align*}
+  (2c)^2 - 4b &= 2\\
+  4c^2 - 4b &= 2\\
+  2c^2 - 2b &= 1\\
+  2(c^2 - b) &= 1
+\end{align*}
+\pause
+But $c^2-b\in\ints$.
+\pause
+
+Which implies that 1 is even, which is a
+contradiction. \QED
+
+
+
+
+\end{frame}
+
+
+
 \bfr{Compare Contrapositive with Contradiction}
 \begin{center}
   {\bf Outline for Contrapositive Proof}
@@ -444,7 +481,91 @@ Therefore $7x+9$ is not even.
 \end{center}
 \end{frame}
 
+\bfr{Example}
+
+{\bf Proposition}  Suppose $a\in\ints$.  If $a^2$ is even, then $a$ is
+even.
+
+{\it Proof.}  Suppose $a^2$ is even and $a$ is not even.
+
+Then $a$ is odd.
+
+Then $a=2c+1$ for some $c\in\ints$.
+
+Then \begin{align*}
+  a^2 &= (2c+1)^2 \\
+  &= 4c^2 + 4c + 1\\
+  &= 2(2c^2 + 2c) + 1 
+\end{align*}
+
+Then $a^2$ is odd.
+
+Thus $a^2$ is even and odd, which is a contradiciton. \QED
+
+\end{frame}
 
 
+\bfr{Example}
+
+{\bf Proposition}  If $a,b\in\ints$ and $a\geq 2$, then $a\nmid b$ or
+$a\nmid (b+1)$.
+
+{\it Proof.}  Suppose $a,b\in\ints$ with $a\geq 2$ and it is not true
+that $a\nmid b$ or
+$a\nmid (b+1)$.
+
+Then $a\mid b$ and $a\mid (b+1)$.
+
+Then there are $c,d\in\ints$ with $b=ac$ and $b+1=ac$.
+
+Subtracting the equations gives
+\begin{align*}
+  1 &= ad-ac\\
+  &= a(d-c)
+\end{align*}
+Since $a$ is positive, $d-c$ is positive.
+So
+\begin{align*}
+  a &= 1/(d-c) < 2
+\end{align*}
+Therefore $a\geq 2$ and $a<2$, a contradiction. \QED
+
+\end{frame}
+
+\bfr{Example}
+
+{\bf Proposition}  Every non-zero rational number can be expressed as
+a producto of two irrational numbers.
+
+{\it Proof.}  Reword the proposition:
+If $r$ is a non-zero rational number, then $r$ is the product of two
+irrational numbers.
+
+Suppose $r$ is a non-zero rational number.
+
+Then $r=a/b$ for $a,b\in\ints$.  Also,
+$r = \sqrt{2}({r}/{\sqrt{2}})$.
+
+We know $\sqrt{2}$ is irrational, so we need to prove that
+$r/{\sqrt{2}}$
+
+To show this, assume $r/\sqrt{2}$ is rational.  Then
+${r}/{\sqrt{2}} = {c}/{d}$
+for some $c,d\in\ints$.
+
+So
+\[
+  \sqrt{2} = r\frac{d}{c}
+  = \frac{a}{b}\frac{d}{c}
+  = \frac{ad}{bc}
+\]
+Which means $\sqrt{2}$ is rational, which is a contradiction.
+
+Therefore $r/\sqrt{2}$ is irrational.
+
+Therefore $r=\sqrt{2}\cdot r/\sqrt{2}$ is a product of two irrational
+numbers. \QED
+
+\end{frame}
 
 \end{document}

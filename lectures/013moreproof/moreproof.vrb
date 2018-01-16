@@ -1,0 +1,24 @@
+\frametitle{ Example }
+
+{\bf Proposition 7.1} If $a,b\in\nats$ then \\there exist
+$k,\ell\in\ints$ for which $\gcd(a,b)=ak+b\ell$.
+
+\pause
+
+{\it Proof.}  Suppose $a,b\in\nats$.
+
+Consider the set $A=\set{ax+by : x,y\in\ints}$.
+
+$A$ contains positive integers and 0.
+
+Let $d\in A$ be the smallest positive integer.
+
+$d = ak + b\ell$ for some $k,\ell\in\ints$.
+
+We will show that $d=\gcd(a,b)$.
+
+First, prove that $d\mid a$ and $d\mid b$.
+
+Then show that it is the largest such number.
+
+

@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.3)  12 JAN 2018 09:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.3)  16 JAN 2018 08:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**conditionals.tex
+**conditionals
 (./conditionals.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 10 language(s) loaded.
@@ -972,7 +972,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 13--187
 \openout4 = `conditionals.vrb'.
 
  (./conditionals.vrb)
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 19--208
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 21--210
 [][]  
  []
 
@@ -987,7 +987,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 19--208
 \openout4 = `conditionals.vrb'.
 
  (./conditionals.vrb)
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 10--229
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 10--231
 [][]  
  []
 
@@ -997,7 +997,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 10--229
 \openout4 = `conditionals.vrb'.
 
  (./conditionals.vrb)
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 10--241
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 10--243
 [][]  
  []
 
@@ -1007,7 +1007,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 10--241
 \openout4 = `conditionals.vrb'.
 
  (./conditionals.vrb)
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 17--260
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 17--262
 [][]  
  []
 
@@ -1017,7 +1017,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 17--260
 \openout4 = `conditionals.vrb'.
 
  (./conditionals.vrb)
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 20--281
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 20--283
 [][]  
  []
 
@@ -1060,10 +1060,46 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 20--281
 
  (./conditionals.vrb) [22
 
+] (./conditionals.vrb) [23
+
+] (./conditionals.vrb)
+[24
+
+] (./conditionals.vrb) [25
+
+] (./conditionals.vrb) [26
+
+] (./conditionals.vrb)
+[27
+
+] (./conditionals.vrb) [28
+
 ]
 \openout4 = `conditionals.vrb'.
 
- (./conditionals.vrb) [23
+ (./conditionals.vrb) [29
+
+]
+\openout4 = `conditionals.vrb'.
+
+ (./conditionals.vrb)
+[30
+
+]
+\openout4 = `conditionals.vrb'.
+
+ (./conditionals.vrb) [31
+
+]
+\openout4 = `conditionals.vrb'.
+
+ (./conditionals.vrb) [32
+
+]
+\openout4 = `conditionals.vrb'.
+
+ (./conditionals.vrb)
+[33
 
 ]
 \tf@nav=\write7
@@ -1075,11 +1111,11 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 20--281
 \tf@snm=\write9
 \openout9 = `conditionals.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 450.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 450.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 571.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 571.
  (./conditionals.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 450.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 450.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 571.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 571.
 Package rerunfilecheck Info: File `conditionals.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1087,16 +1123,16 @@ Package rerunfilecheck Info: File `conditionals.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 450.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 571.
  ) 
 Here is how much of TeX's memory you used:
- 17013 strings out of 494827
- 323526 string characters out of 6176977
+ 17062 strings out of 494827
+ 324135 string characters out of 6176977
  394669 words of memory out of 5000000
- 19838 multiletter control sequences out of 15000+600000
+ 19847 multiletter control sequences out of 15000+600000
  10870 words of font info for 42 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 48i,15n,51p,412b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,15n,51p,408b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
@@ -1107,10 +1143,10 @@ onts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msbm10.pfb>
-Output written on conditionals.pdf (23 pages, 128740 bytes).
+Output written on conditionals.pdf (33 pages, 150404 bytes).
 PDF statistics:
- 655 PDF objects out of 1000 (max. 8388607)
- 606 compressed objects within 7 object streams
- 47 named destinations out of 1000 (max. 500000)
+ 913 PDF objects out of 1000 (max. 8388607)
+ 852 compressed objects within 9 object streams
+ 67 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
