@@ -138,7 +138,7 @@ the sum of two perfect cubes in two different ways.
 {\bf Proposition 7.1} If $a,b\in\nats$ then \\there exist
 $k,\ell\in\ints$ for which $\gcd(a,b)=ak+b\ell$.
 
-\pause
+\pause\vfill
 
 {\it Proof.}  Suppose $a,b\in\nats$.
 
@@ -158,4 +158,219 @@ Then show that it is the largest such number.
 
 
 \end{frame}
+
+\bfr{Example}
+
+{\bf Proposition 7.1} If $a,b\in\nats$ then \\there exist
+$k,\ell\in\ints$ for which $\gcd(a,b)=ak+b\ell$.
+
+\vfill
+{\it Proof.}  $d=ak+b\ell$ is the smallest positive element of
+$A=\set{ax+by : x,y\in\ints}$.
+Show that $d \mid a$.
+
+Use division algorithm: $a = qd + r$.
+\begin{align*}
+  r &= a - qd\\
+  &= a - q(ak+b\ell)\\
+  &= a(1-qk) + b(-q\ell)
+\end{align*}
+So $r\in A$, $0\leq r< d$, so $r=0$.
+
+So $a = qd + r = qd$ and so $d\mid a$.
+\pause
+
+A similar argument shows $d\mid b$.
+\end{frame}
+
+\bfr{Example}
+
+{\bf Proposition 7.1} If $a,b\in\nats$ then \\there exist
+$k,\ell\in\ints$ for which $\gcd(a,b)=ak+b\ell$.
+
+\vfill
+{\it Proof.}  $d=ak+b\ell$ is the smallest positive element of
+$A=\set{ax+by : x,y\in\ints}$, and $d \mid a$ and $d \mid b$.
+
+\begin{align*}
+a &=   \gcd(a,b) \cdot m\\
+b &= \gcd(a,b)\cdot n\\
+d &= ak + b\ell \\
+&= \gcd(a,b)\cdot mk + \gcd(a,b)\cdot n\ell\\
+&= \gcd(a,b)(mk+n\ell)\\
+d &\geq \gcd(a,b)\\
+d &= \gcd(a,b)  
+\end{align*}
+\QED
+
+\end{frame}
+
+\bfr{Proofs involving sets}
+
+  {\bf How to show $a\in\set{x:P(x)}$}
+  
+  \fbox{\parbox{0.6\textwidth}{
+    Show that $P(a)$ is true.
+  }}
+
+  \vfill
+  
+  {\bf How to show $a\in\set{x\in S:P(x)}$}
+  
+  \fbox{\parbox{0.6\textwidth}{
+    1.    Verify that $a\in S$.\\    
+    2.    Show that $P(a)$ is true.
+  }}
+
+\end{frame}
+
+\bfr{Proofs involving sets}
+
+{\bf How to Prove $A\subseteq B$}
+
+{\bf (Direct approach)}
+  
+  \fbox{\parbox{0.6\textwidth}{
+      {\it Proof.}  Suppose $a\in A$.
+
+      $\vdots$
+
+      Therefore $a\in B$. \QED
+  }}
+
+  \vfill
+
+  {\bf How to Prove $A\subseteq B$}
+
+
+{\bf (Contrapositive approach)}
+  
+  \fbox{\parbox{0.6\textwidth}{
+      {\it Proof.}  Suppose $a\not \in B$.
+
+      $\vdots$
+
+      Therefore $a\not \in A$. \QED
+  }}
+
+
+
+\end{frame}
+
+\bfr{Proofs involving sets}
+
+{\bf How to Prove $A = B$}
+
+  
+  \fbox{\parbox{0.6\textwidth}{
+      {\it Proof.}
+
+      [Prove that $A\subseteq B$.]
+
+      [Prove that $B\subseteq A$.]
+
+ \QED
+  }}
+\end{frame}
+
+\bfr{Disproof}
+
+\fbox{\parbox{0.9\textwidth}{
+    {\bf How to disprove $P$:}  Prove $\neg P$.
+}}
+
+\pause\vfill
+
+\fbox{\parbox{0.9\textwidth}{
+    {\bf How to disprove $\forall x\in S, P(x)$:}
+
+    Produce an example of $x\in S$ where $P(x)$ is false.
+}}
+
+
+\pause\vfill
+
+\fbox{\parbox{0.9\textwidth}{
+    {\bf How to disprove $P(x)\then Q(x)$:}
+
+    Produce an example of $x$ where $P(x)$ is true but $Q(x)$ is false.
+}}
+
+
+\end{frame}
+
+\bfr{Mathematical Induction}
+
+\grf{1.0}{sumofodds.png}
+
+\end{frame}
+
+\bfr{Mathematical Induction}
+
+\grf{0.75}{domino.png}
+
+\end{frame}
+
+\bfr{Mathematical Induction}
+
+
+  {\bf Outline for Proof by Induction}
+
+  \fbox{\parbox{\textwidth}{
+      {\bf Proposition}  The statements $S_1,S_2,S_3,\ldots$ are all true.
+
+      {\it Proof.}
+
+      (1) Prove that $S_1$ is true.
+
+      (2) Prove that for $k\in\nats$, $S_k \Rightarrow S_{k+1}$ is true.
+      \QED
+  }}
+
+\end{frame}
+
+\bfr{Example Proof by Induction}
+
+{\bf Proposition} If $n\in\nats$, then $1+3+5+7 +...+(2n-1) = n^2$.
+
+(1) If $n=1$, then $1=1^2$, which is true.
+
+(2) Assume
+\[
+1+3+5+7 +...+(2k-1) = k^2
+\]
+for some $k\in\nats$.
+
+\vfill
+\centerline{$\vdots$}
+\vfill
+
+Therefore,
+\[
+1+3+5+7 +...+(2(k+1)-1) = (k+1)^2
+\]
+
+\QED
+
+\end{frame}
+
+\bfr{Example Proof by Induction}
+
+{\bf Proposition} If $n\in\nats$, then $1+3+5+7 +...+(2n-1) = n^2$.
+
+(1) If $n=1$, then $1=1^2$, which is true.
+
+(2) Assume $1+3+5+7 +...+(2k-1) = k^2$ for some $k\in\nats$.
+
+Then
+\begin{align*}
+  1+3+5+7 +... + 2(k+1) -1 &= \\
+  1+3+5+7 +...+(2k-1) + (2(k+1) -1) &= k^2 + (2(k+1) -1)\\
+  &= k^2 + 2d + 1\\
+  &= (k+1)^2
+\end{align*}
+\QED
+
+\end{frame}
+
 \end{document}

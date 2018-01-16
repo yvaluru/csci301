@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.3)  16 JAN 2018 09:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.3)  16 JAN 2018 10:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1122,7 +1122,7 @@ Package pdftex.def Info: listchoicetree.png used on input line 8.
 \openout4 = `fundamentals.vrb'.
 
  (./fundamentals.vrb
-<choiceswithreps.png, id=870, 243.15843pt x 134.00063pt>
+<choiceswithreps.png, id=868, 243.15843pt x 134.00063pt>
 File: choiceswithreps.png Graphic file (type png)
 
 <use choiceswithreps.png>
@@ -1150,7 +1150,7 @@ Package pdftex.def Info: choiceswithreps.png used on input line 7.
 \openout4 = `fundamentals.vrb'.
 
  (./fundamentals.vrb
-<choiceswithoutreps.png, id=947, 239.39438pt x 134.75343pt>
+<choiceswithoutreps.png, id=945, 239.39438pt x 134.75343pt>
 File: choiceswithoutreps.png Graphic file (type png)
 
 <use choiceswithoutreps.png>
@@ -1178,7 +1178,7 @@ Package pdftex.def Info: choiceswithoutreps.png used on input line 6.
 \openout4 = `fundamentals.vrb'.
 
  (./fundamentals.vrb
-<choiceswithe.png, id=1025, 789.70032pt x 167.87718pt>
+<choiceswithe.png, id=1023, 789.70032pt x 167.87718pt>
 File: choiceswithe.png Graphic file (type png)
  <use choiceswithe.png>
 Package pdftex.def Info: choiceswithe.png used on input line 7.
@@ -1248,7 +1248,7 @@ Package pdftex.def Info: choiceswithe.png used on input line 7.
 \openout4 = `fundamentals.vrb'.
 
  (./fundamentals.vrb
-<permstocombs.png, id=1432, 824.32968pt x 300.3722pt>
+<permstocombs.png, id=1431, 824.32968pt x 300.3722pt>
 File: permstocombs.png Graphic file (type png)
  <use permstocombs.png>
 Package pdftex.def Info: permstocombs.png used on input line 6.
@@ -1310,10 +1310,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 660.
  ) 
 Here is how much of TeX's memory you used:
- 17280 strings out of 494827
- 327463 string characters out of 6176977
+ 17282 strings out of 494827
+ 327479 string characters out of 6176977
  398633 words of memory out of 5000000
- 19941 multiletter control sequences out of 15000+600000
+ 19943 multiletter control sequences out of 15000+600000
  15160 words of font info for 60 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  48i,15n,51p,408b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1328,7 +1328,7 @@ ype1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/symbols/msbm10.pfb>
-Output written on fundamentals.pdf (61 pages, 381074 bytes).
+Output written on fundamentals.pdf (61 pages, 381040 bytes).
 PDF statistics:
  1648 PDF objects out of 1728 (max. 8388607)
  1545 compressed objects within 16 object streams
