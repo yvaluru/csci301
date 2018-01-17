@@ -21,6 +21,8 @@
 \newcommand{\then}{\ensuremath{\Rightarrow}}
 \newcommand{\lcm}{\mbox{lcm}}
 \newcommand{\QED}{\hfill\ensuremath{\blacksquare}}
+\newcommand{\equivmod}[3]{#1 \equiv #2\ (\mbox{mod } #3)}
+\newcommand{\nequivmod}[3]{#1 \not\equiv #2\ (\mbox{mod } #3)}
 
 \newcommand{\grf}[2]{\centerline{\includegraphics[width=#1\textwidth]{#2}}}
 \newcommand{\tw}{\textwidth}
@@ -384,6 +386,54 @@ Therefore $7x+9$ is not even.
 
 \end{frame}
 
+\bfr{Congruence of Integers}
+
+{\bf Definition 5.1}  Given $a,b\in\ints$ and $n\in\nats$, we say that
+$a$ and $b$ are {\bf congruent modulo $n$} if $n\mid(a-b)$.  We
+express this as $\equivmod{a}{b}{n}$.
+
+\newcommand{\equivexamp}[3]{
+\item $#1 \equiv #2\ (\mbox{mod } #3)$ because $#3 \mid (#1 - #2)$.
+  }
+\newcommand{\nequivexamp}[3]{
+\item $#1 \not\equiv #2\ (\mbox{mod } #3)$ because $#3 \nmid (#1 - #2)$.
+  }
+{\bf Example 5.1}
+\begin{enumerate}
+\equivexamp {9}{1}{4}
+\equivexamp {6}{10}{4}
+\nequivexamp {14}{8}{4}
+\equivexamp {20}{4}{8}
+\equivexamp {17}{(-4)}{3}
+
+\end{enumerate}
+
+\vfill
+
+{\sl They have the same remainder upon division by $n$.}
+\end{frame}
+
+\bfr{Proof of Congruence}
+
+{\bf Proposition}  If $\equivmod{a}{b}{n}$ then $\equivmod{a^2}{b^2}{n}$.
+
+{\it Proof.}  Suppose $\equivmod{a}{b}{n}$.
+
+By definition, $n\mid (a-b)$.
+
+By definition, $a-b = nc$ for some $c\in\ints$.
+\begin{align*}
+  a-b &= nc\\
+  (a-b)(a+b) &= nc(a+b)\\
+  a^2 - b^2 &= nc(a+b)
+\end{align*}
+Since $c(a+b)\in\ints$, this tells us that $n\mid (a^2-b^2)$.
+
+By definition, $\equivmod{a^2}{b^2}{n}$.
+
+\end{frame}
+
+
 \bfr{Proof by Contradiction}
 \newcommand{\rowfive}[5]{#1&#2&#3&#4&#5\\\hline}
 \begin{center}
@@ -436,9 +486,6 @@ But $c^2-b\in\ints$.
 
 Which implies that 1 is even, which is a
 contradiction. \QED
-
-
-
 
 \end{frame}
 

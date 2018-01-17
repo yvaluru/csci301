@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.3)  17 JAN 2018 08:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.3)  17 JAN 2018 09:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**moreproof
-(./moreproof.tex
+**cardinality
+(./cardinality.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 10 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -720,23 +720,23 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \c@FancyVerbLine=\count154
 \FV@StepNumber=\count155
 \FV@OutFile=\write5
-) (./moreproof.aux)
-\openout1 = `moreproof.aux'.
+) (./cardinality.aux)
+\openout1 = `cardinality.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -802,7 +802,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 42.
+Package hyperref Info: Link coloring OFF on input line 44.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -812,56 +812,56 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count162
 )
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
-LaTeX Info: Redefining \nameref on input line 42.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
 
-(./moreproof.out) (./moreproof.out)
+(./cardinality.out) (./cardinality.out)
 \@outlinefile=\write6
-\openout6 = `moreproof.out'.
+\openout6 = `cardinality.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 42.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 44.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 42.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 44.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 42.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 42.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 42.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 42.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 42.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 42.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 42.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 42.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 42.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 44.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 42.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 44.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 42.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 42.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 42.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 42.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 42.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 42.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 44.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -887,259 +887,202 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 42.
- (./moreproof.nav)
+LaTeX Info: Redefining \includegraphics on input line 44.
+ (./cardinality.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 46.
+(Font)              size <5> substituted on input line 48.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-\openout4 = `moreproof.vrb'.
+\openout4 = `cardinality.vrb'.
 
- (./moreproof.vrb
-LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+ (./cardinality.vrb
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 19.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)) [2
+
+] (./cardinality.vrb) [3
+
+]
+\openout4 = `cardinality.vrb'.
+
+ (./cardinality.vrb) [4
+
+]
+\openout4 = `cardinality.vrb'.
+
+ (./cardinality.vrb
+<relationUonB.png, id=124, 216.81pt x 135.50626pt>
+File: relationUonB.png Graphic file (type png)
+ <use relationUonB.png>
+Package pdftex.def Info: relationUonB.png used on input line 9.
+(pdftex.def)             Requested size: 153.64493pt x 96.03227pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[5
 
- []
+ <./relationUonB.png (PNG copy)>]
+\openout4 = `cardinality.vrb'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
-
- []
-
-) [2
+ (./cardinality.vrb) [6
 
 ]
-\openout4 = `moreproof.vrb'.
+\openout4 = `cardinality.vrb'.
 
- (./moreproof.vrb) [3
-
-]
-\openout4 = `moreproof.vrb'.
-
- (./moreproof.vrb) [4
-
-] (./moreproof.vrb) [5
-
-]
-(./moreproof.vrb) [6
-
-]
-\openout4 = `moreproof.vrb'.
-
- (./moreproof.vrb) [7
-
-] (./moreproof.vrb) [8
-
-]
-(./moreproof.vrb) [9
-
-] (./moreproof.vrb) [10
-
-]
-\openout4 = `moreproof.vrb'.
-
- (./moreproof.vrb) [11
-
-]
-(./moreproof.vrb) [12
-
-]
-\openout4 = `moreproof.vrb'.
-
- (./moreproof.vrb) [13
-
-] (./moreproof.vrb) [14
-
-]
-\openout4 = `moreproof.vrb'.
-
-
-(./moreproof.vrb) [15
-
-]
-\openout4 = `moreproof.vrb'.
-
- (./moreproof.vrb) [16
-
-]
-\openout4 = `moreproof.vrb'.
-
- (./moreproof.vrb) [17
-
-]
-\openout4 = `moreproof.vrb'.
-
-
-(./moreproof.vrb) [18
-
-]
-\openout4 = `moreproof.vrb'.
-
- (./moreproof.vrb) [19
-
-] (./moreproof.vrb) [20
-
-]
-(./moreproof.vrb) [21
-
-]
-\openout4 = `moreproof.vrb'.
-
- (./moreproof.vrb
-<sumofodds.png, id=561, 407.27156pt x 240.14719pt>
-File: sumofodds.png Graphic file (type png)
- <use sumofodds.png>
-Package pdftex.def Info: sumofodds.png used on input line 3.
-(pdftex.def)             Requested size: 307.28987pt x 181.2019pt.
+ (./cardinality.vrb
+<relationpics.png, id=176, 719.68875pt x 551.05875pt>
+File: relationpics.png Graphic file (type png)
+ <use relationpics.png>
+Package pdftex.def Info: relationpics.png used on input line 3.
+(pdftex.def)             Requested size: 307.28987pt x 235.29416pt.
 )
-[22
-
- <./sumofodds.png (PNG copy)>]
-\openout4 = `moreproof.vrb'.
-
- (./moreproof.vrb
-<domino.png, id=587, 541.27219pt x 484.81125pt>
-File: domino.png Graphic file (type png)
- <use domino.png>
-Package pdftex.def Info: domino.png used on input line 3.
-(pdftex.def)             Requested size: 230.46739pt x 206.42302pt.
-) [23
-
- <./domino.png (PNG copy)>]
-\openout4 = `moreproof.vrb'.
-
- (./moreproof.vrb
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 15--16
-[][]  
+Overfull \vbox (1.021pt too high) detected at line 116
  []
 
-) [24
+[7
+
+ <./relationpics.png (PNG copy)>]
+\openout4 = `cardinality.vrb'.
+
+ (./cardinality.vrb
+<relationsonZ.png, id=203, 612.78937pt x 179.16937pt>
+File: relationsonZ.png Graphic file (type png)
+ <use relationsonZ.png>
+Package pdftex.def Info: relationsonZ.png used on input line 3.
+(pdftex.def)             Requested size: 307.28987pt x 89.84691pt.
+)
+[8
+
+ <./relationsonZ.png (PNG copy)>]
+\openout4 = `cardinality.vrb'.
+
+ (./cardinality.vrb) [9
+
+] (./cardinality.vrb) [10
 
 ]
-\openout4 = `moreproof.vrb'.
+\openout4 = `cardinality.vrb'.
 
- (./moreproof.vrb) [25
+ (./cardinality.vrb
+<equivalencepics.png, id=281, 703.87968pt x 545.78906pt>
+File: equivalencepics.png Graphic file (type png)
 
-]
-\openout4 = `moreproof.vrb'.
-
- (./moreproof.vrb
-Overfull \hbox (15.1323pt too wide) in paragraph at lines 15--15
-[]  
+<use equivalencepics.png>
+Package pdftex.def Info: equivalencepics.png used on input line 3.
+(pdftex.def)             Requested size: 307.28987pt x 238.26578pt.
+)
+Overfull \vbox (3.99261pt too high) detected at line 151
  []
 
-) [26
+[11
 
-]
-\openout4 = `moreproof.vrb'.
+ <./equivalencepics.png (PNG copy)>]
+\openout4 = `cardinality.vrb'.
 
- (./moreproof.vrb) [27
-
-]
-\openout4 = `moreproof.vrb'.
-
- (./moreproof.vrb) [28
-
-]
-\openout4 = `moreproof.vrb'.
-
- (./moreproof.vrb) [29
-
-]
-\openout4 = `moreproof.vrb'.
-
-
-(./moreproof.vrb
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 16--17
-[][]  
+ (./cardinality.vrb)
+Overfull \vbox (2.20695pt too high) detected at line 172
  []
 
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 30--31
-[][]  
- []
-
-) [30
+[12
 
 ]
-\openout4 = `moreproof.vrb'.
+\openout4 = `cardinality.vrb'.
 
- (./moreproof.vrb
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 14--15
-[][]  
- []
+ (./cardinality.vrb) [13
+
+]
+\openout4 = `cardinality.vrb'.
+
+ (./cardinality.vrb) [14
+
+]
+\openout4 = `cardinality.vrb'.
+
+ (./cardinality.vrb
+<intsmodfive.png, id=384, 838.63312pt x 150.5625pt>
+File: intsmodfive.png Graphic file (type png)
+ <use intsmodfive.png>
+Package pdftex.def Info: intsmodfive.png used on input line 3.
+(pdftex.def)             Requested size: 307.28987pt x 55.16736pt.
+)
+[15
+
+ <./intsmodfive.png (PNG copy)>]
+\openout4 = `cardinality.vrb'.
+
+ (./cardinality.vrb
+<relationbetweenAandB.png, id=411, 225.84375pt x 212.29312pt>
+File: relationbetweenAandB.png Graphic file (type png)
+
+<use relationbetweenAandB.png>
+Package pdftex.def Info: relationbetweenAandB.png used on input line 8.
+(pdftex.def)             Requested size: 153.64493pt x 144.43515pt.
+) [16
+
+ <./relationbetweenAandB.png (PNG copy)>]
+\openout4 = `cardinality.vrb'.
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 34--35
-[][]  
- []
-
-) [31
+(./cardinality.vrb) [17
 
 ]
 \tf@nav=\write7
-\openout7 = `moreproof.nav'.
+\openout7 = `cardinality.nav'.
 
 \tf@toc=\write8
-\openout8 = `moreproof.toc'.
+\openout8 = `cardinality.toc'.
 
 \tf@snm=\write9
-\openout9 = `moreproof.snm'.
+\openout9 = `cardinality.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 520.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 520.
- (./moreproof.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 520.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 520.
-Package rerunfilecheck Info: File `moreproof.out' has not changed.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
+ (./cardinality.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
+Package rerunfilecheck Info: File `cardinality.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 520.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 232.
  ) 
 Here is how much of TeX's memory you used:
- 17062 strings out of 494827
- 324247 string characters out of 6176977
- 395674 words of memory out of 5000000
- 19852 multiletter control sequences out of 15000+600000
- 10870 words of font info for 42 fonts, out of 8000000 for 9000
+ 17034 strings out of 494827
+ 324335 string characters out of 6176977
+ 396787 words of memory out of 5000000
+ 19873 multiletter control sequences out of 15000+600000
+ 15160 words of font info for 60 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 48i,15n,51p,405b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,15n,51p,407b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/symbols/msbm10.pfb>
-Output written on moreproof.pdf (31 pages, 236639 bytes).
+onts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/symbols/msbm10.pfb>
+Output written on cardinality.pdf (17 pages, 379126 bytes).
 PDF statistics:
- 868 PDF objects out of 1000 (max. 8388607)
- 806 compressed objects within 9 object streams
- 63 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 500 PDF objects out of 1000 (max. 8388607)
+ 454 compressed objects within 5 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 79 words of extra memory for PDF output out of 10000 (max. 10000000)
 
