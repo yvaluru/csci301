@@ -1,2 +1,2 @@
 # csci301
-Resources for CSCI321, Winter 2018, WWU
+Resources for CSCI301, Winter 2018, WWU
