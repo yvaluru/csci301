@@ -47,6 +47,118 @@ Scheme Notes 02
 \titlepage
 \end{frame}
 
+\sect{Procedures in Scheme}
+\begin{alltt}
+(define f
+  \blue{(lambda (x) (* x x))}
+  )
+
+
+(\blue{f} 3) => 9
+(\blue{f} 4) => 16
+  
+(\blue{(lambda (x) (* x x))} 3) => 9
+(\blue{(lambda (x) (* x x))} 4) => 16
+
+\end{alltt}
+\end{frame}
+
+\sect{Local Variables in Procedures: Closures}
+
+\begin{alltt}
+(define counter
+  (let ((\red{n} 0))
+    \blue{(lambda ()
+      (set! \red{n} (+ \red{n} 1))
+      \red{n}
+    )}
+  )
+)
+
+(counter)   =>  1
+(counter)   =>  2
+(counter)   =>  3
+\end{alltt}
+\end{frame}
+
+\sect{A Procedure that Returns a Procedure}
+
+\begin{alltt}
+  (define curry
+    (lambda (\red{a})
+      \blue{(lambda (b)
+        (+ \red{a} b)
+      )}
+    )
+  )
+
+
+  \blue{(curry 3)}       =>  #<procedure>
+
+  (\blue{(curry 3)} 4)   =>  7
+
+\end{alltt}
+\end{frame}
+\sect{A Procedure that Returns a Counter}
+
+\begin{alltt}
+(define new-counter
+  (lambda ()
+    (let ((\red{n} 0))
+      \blue{(lambda ()
+        (set! \red{n} (+ \red{n} 1))
+        \red{n})}    )  )  )
+
+(define x (new-counter))
+(define y (new-counter))
+
+(x)  => 1
+(x)  => 2
+(x)  => 3
+(y)  => 1
+(y)  => 2
+(x)  => 4
+\end{alltt}
+\end{frame}
+
+\sect{Procedures as Returned Values: Derivatives}
+\begin{alltt}
+(define d
+  (lambda (f)
+    (let* ((delta 0.00001)
+           (two-delta (* 2 delta)))
+      \blue{(lambda (x)
+        (/ (- (f (+ x delta)) (f (- x delta)))
+           two-delta))})))
+
+
+
+((d (lambda (x) (* x x x)))  5)    => ?
+((d sin) 0.0)                      => ?
+           
+\end{alltt}
+\end{frame}
+
+\sect{Procedures as Returned Values: Procedures as Data}
+\begin{alltt}
+
+(define make-pair
+  (lambda (a b)
+    \blue{(lambda (i)
+      (cond ((= i 0) a)
+            ((= i 1) b)
+            (else (error 'bad-index))))}
+  ))
+
+(define x (make-pair 4 8))
+(define y (make-pair 100 200))
+(define z (make-pair x y))  
+
+(x 0)       => ?
+(y 1)       => ?
+((z 1) 0)   => ?
+\end{alltt}
+\end{frame}
 
 
 \sect{Procedures as parameters}
@@ -96,10 +208,27 @@ Because then you have problems with
 
 \end{frame}
 
+\sect{Matches Scheme Code Better, Too}
+
+
+\[\sum_{a}^{b} f = f(a) + \ldots + f(b)\]
+
+\begin{alltt}
+(define sum
+  (lambda (a b \blue{f})
+    (if (> a b)
+        0
+        (+ (\blue{f} a) (sum (+ a 1) b \blue{f})))))
+\end{alltt}
+
+\end{frame}
+
 \sect{We have the same problem with derivatives}
 
 \begin{align*}
-  \frac{d x^2}{dx}  &= 2x \\\\
+  \frac{d}{dx} f(x) &= f'(x)\\\\
+  \frac{d x^2}{dx}  &= 2x \\\\\\
+D(f) &= f'\\\\
 D( \lambda x . x^2 )&= \lambda x . 2x
 \end{align*}
 
@@ -188,67 +317,18 @@ these things until we find a value that's close enough.
 \begin{alltt}
 (define sqrt
   (lambda (x)
-    (fixed-point (lambda (y) (/ (+ y (/ x y)) 2)))))
+    (fixed-point
+      (lambda (y)
+        (/ 
+           (+ y (/ x y)) 
+           2
+        )
+      )
+    )
+  )
+)
 \end{alltt}
 
-\end{frame}
-
-\sect{Procedures as Returned Values}
-\begin{alltt}
-(define make-adder
-  (lambda (n)
-    (lambda (m) (+ m n))))
-
-
-
-
-
-
-((make-adder 4) 5)
-\end{alltt}
-\end{frame}
-
-\sect{Note that this would be more confusing:}
-\begin{alltt}
-(define (make-adder n)
-    (lambda (m) (+ m n)))
-
-
-
-(define make-adder
-  (lambda (n)
-    (lambda (m) (+ m n))))
-\end{alltt}
-\end{frame}
-
-\sect{Procedures as Returned Values: Derivatives}
-\begin{alltt}
-(define d
-  (lambda (f)
-    (let* ((delta 0.00001)
-           (two-delta (* 2 delta)))
-      (lambda (x)
-        (/ (- (f (+ x delta)) (f (- x delta)))
-           two-delta)))))
-
-
-
-((d (lambda (x) (* x x x)))  5)
-\end{alltt}
-\end{frame}
-
-\sect{Procedures as Returned Values: Procedures as Data}
-\begin{alltt}
-(define make-pair
-  (lambda (a b)
-    (lambda (command)
-      (if (eq? command 'first) a b))))
-
-(define x (make-pair 4 8))
-(define y (make-pair 100 200))
-(define z (make-pair x y))  
-      
-\end{alltt}
 \end{frame}
 
 
