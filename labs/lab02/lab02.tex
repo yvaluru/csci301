@@ -67,8 +67,8 @@ In fact, it's quite simple:
 \int_a^b f dx  =  I(b) - I(a)
 \end{eqnarray}
 
-This gives us our key.  We will define a Scheme function {\tt i}, for
-integrate, which, when given a function as an argument, {\tt (i f)},
+This gives us our key.  We will define a Scheme function {\tt I}, for
+integrate, which, when given a function as an argument, {\tt (I f)},
 returns a function of two parameters, {\tt a} and {\tt b}.  When
 {\em this returned function} is given two numbers, it computes the definite
 integral of {\tt f} from {\tt a} to {\tt b}, using the summation of
@@ -80,9 +80,9 @@ Here are some examples of how it should work.  Since
 \end{eqnarray}
 then, approximately,
 \begin{Verbatim}
-  ((i (lambda (x) (* 2 x))) 2 4)
+  ((I (lambda (x) (* 2 x))) 2 4)
       => 12
-  ((i (d (lambda (x) (* x x)))) 2 4)
+  ((I (D (lambda (x) (* x x)))) 2 4)
       => 12
 \end{Verbatim}
 
@@ -95,6 +95,10 @@ assignment, we'll make a decent compromise and let the number of
 rectangles be fixed at $n=100,000$, which should give us pretty good
 accuracy without taking too long.
 
+\paragraph{Hint:} It may be easier to first write and debug
+a definite integral
+function that takes three arguments:\\
+{\tt (define Idef (lambda (f a b) ...))}.
 \end{multicols}
 
 \end{document}
