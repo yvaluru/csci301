@@ -1,2 +1,16 @@
-\frametitle{ Functions }
+\frametitle{ Pigeonhole Principle Example }
+
+{\bf Proposition} There are at least two people in Washington State
+with the same number of hairs on their heads.
+
+\vfill\pause
+
+{\it Proof.}
+
+The population of Washington is more than seven million.
+
+Every human head has fewer than one million hairs.
+
+By the pigeonhole principle, two Washingtonians must have the same
+number of hairs on their head.
 

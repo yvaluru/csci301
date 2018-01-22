@@ -226,7 +226,275 @@ We abbreviate the statement $(x,y)\in R$ as $xRy$.
 
 \bfr{Functions}
 
+{\bf Definition 12.1}  Suppose $A$ and $B$ are sets.  A {\bf function}
+from $A$ to $B$ (denoted as $f : A\rightarrow B$) is a relation
+$f\subseteq A\times B$, satisfying the property that for each $a\in
+A$, the relation $f$ contains exactly one ordered pair of the form
+$(a,b)$.  The statement $(a,b)\in f$ is abbreviated $f(a)=b$.
+
+\vfill\pause
+
+{\bf Definition 12.2}
+
+For a function $f:A\rightarrow B$, the set $A$
+is called the {\bf domain} of $f$.
+
+The set $B$ is called the {\bf
+  codomain} of $f$.
+
+The {\bf range} of $f$ is the set
+$
+\set{f(a) :  a\in A} = \set{b : (a,b)\in f}
+$.
+
+\end{frame}
+
+\bfr{Example function}
+
+\begin{align*}
+  A &= \set{p,q,r,s}\\
+  B &= \set{0,1,2}\\
+  f &= \set{(p,0),(q,1),(r,2),(s,2) }
+\end{align*}
+
+\grf{1.0}{funcfromatob.png}
+
+\end{frame}
+
+\bfr{Example function}
+\begin{align*}
+  \phi &: \ints^2 \rightarrow \ints\\\\
+  \phi(m,n) &= 6m-9n\\\\
+  \phi &= \set{((m,n),6m-9n) : (m,n)\in\ints^2}
+    \subseteq \ints^2 \times \ints
+\end{align*}
+
+\pause
+\begin{itemize}
+\item  What is the domain?
+\item What is the codomain?
+\item What is the range?
+\end{itemize}
+\pause
+\[ \set{3k : k\in\ints} \]
+
+\end{frame}
+
+\bfr{Equality of functions}
+
+{\bf Definition 12.3} Two functions $f : A\rightarrow B$ and $g :
+C\rightarrow D$ are {\bf equal} if $A=C$, $B=D$, and $f(x)=g(x)$ for
+every $x\in A$.
+
+\end{frame}
+
+\bfr{Injections and Surjections}
+
+{\bf Definition 12.4}  A function $f : A\rightarrow B$ is
+\begin{enumerate}
+  \item {\bf injective} (or one-to-one) if\\ for every $x,y\in A$,
+    $x\neq y \then f(x) \neq f(y)$;
+  \item {\bf surjective} (or onto) if\\ for every $b\in B$ there is an
+    $a\in A$ with $f(a) = b$;
+  \item {\bf bijective} if $f$ is both injective and surjective.
+\end{enumerate}
+
+\grf{1.0}{injectionsurjection.png}
+\end{frame}
+
+\bfr{Injective and Surjective Examples}
+\grf{1.0}{injsurjexamples.png}
+\end{frame}
+
+\bfr{Proving a function is an injection}
+    {\bf How to show a function $f:A\rightarrow B$ is injective:}
+
+    \fbox{\parbox{0.45\textwidth}{
+        {\bf Direct approach:}
+
+        Suppose $x,y\in A$, $x\neq y$.
+
+        $\vdots$
+
+        Therefore $f(x)\neq f(y)$.
+        }}\hfill
+    \fbox{\parbox{0.5\textwidth}{
+        {\bf Contrapositive approach:}
+
+        Suppose $x,y\in A$, $f(x)=f(y)$.
+
+        $\vdots$
+
+        Therefore $x=y$.
+    }}
+
+\vfill
+    Contrapositive is usually easier.
+
+    \vfill
+
+    {\bf How to show a function $f:A\rightarrow B$ is not injective:}
+    \fbox{\parbox{0.9\textwidth}{
+      Find $x,y\in A, x=y$, with $f(x)\neq f(y)$.}}
+
+
+\end{frame}
+
+\bfr{Proving a function is a surjection}
+
+{\bf How to show a function $f:A\rightarrow B$ is surjective:}
+
+\fbox{\parbox{0.9\textwidth}{
+    Suppose $b\in B$.
+
+    $\vdots$
+
+    There exists $a\in A$ with $f(a) = b$.
+}}
+
+\vfill
+
+{\bf How to show a function $f:A\rightarrow B$ is not surjective:}
+
+\fbox{\parbox{0.9\textwidth}{
+    Find $b\in B$ such that
+    for all $a\in A, f(a) \neq b$.
+}}
+
+
+
+
+\end{frame}
+
+\bfr{Example 12.4}
+
+{\bf Proposition}
+$f:\mathbb{R}-\set{0} \rightarrow \mathbb{R}$ defined as
+$f(x)=\frac{1}{x} + 1$ is injective but not surjective.
+\vfill
+
+{\bf Injective.} \pause  Suppose $x,y\in\mathbb{R}-\set{0}$ and $f(x)=f(y)$.
+
+This implies $\frac{1}{x} + 1 = \frac{1}{y} + 1$.
+
+Algebra shows $x=y$.  Therefore $f$ is injective.
+\vfill
+{\bf Not surjective.} \pause There exists $b=1\in\mathbb{R}$ for which $f(x)
+=\frac{1}{x} + 1\neq 1$ for every $x\in\mathbb{R}-\set{0}$.
+
 \end{frame}
 
 
+\bfr{Example 12.5}
+
+{\bf Proposition}  The function
+$g:\ints\times\ints\rightarrow\ints\times\ints$ defined by
+$g(m,n) = (m+n,m+2n)$ is both injective and surjective.
+
+\vfill
+
+{\bf Injective.} \pause  Suppose $(m,n), (k,\ell)\in\ints\times\ints$
+and $g(m,n) = g(k,\ell)$.
+
+Then $(m+n,m+2n) = (k+\ell,k+2\ell)$.
+
+Then $m+n=k+\ell$ and $m+2n=k+2\ell$.
+
+Algebra shows $m=k$ and $n=\ell$.
+
+Therefore $(m,n)=(k,\ell)$ and $g$
+is injective.
+
+\vfill
+
+{\bf Surjective.} \pause Suppose $(b,c)\in\ints\times\ints$.
+
+We need to find $(x,y)\in\ints\times\ints$ for which $g(x,y)=(b,c)$.
+
+We need to find $(x,y)$ such that $x+y=b$ and $x+2y=c$.
+
+Solving gives $x=2b-c$ and $y=c-b$.
+
+Therefore $g(2b-c,c-b) = (b,c)$ and so $g$ is surjective.
+
+\end{frame}
+
+\bfr{The Pigeonhole Principle}
+
+Suppose $A$ and $B$ are finite sets and $f:A\rightarrow B$ is any
+function.
+\begin{enumerate}
+\item If $|A| > |B|$ then $f$ is not surjective.
+\item If $|A| < |B|$ then $f$ is not surjective.
+\end{enumerate}
+
+\vfill
+\grf{1.0}{pigeonholes.png}
+\end{frame}
+
+\bfr{Pigeonhole Principle Example}
+
+{\bf Proposition}  If $A$ is any set of 10 integers between 1 and 100,
+then there exist two different subsets $X,Y\subseteq A$ for which the
+sum of elelments in $X$ equals the sum of elements in $Y$.
+
+{\bf Examples}
+\begin{align*}
+  A &= \set{ 5, 11, 16, 23, 44, 47, 50, 61, 67, 81}\\
+  X &= \set{5,11,16,23}\\
+  Y &= \set{5,50}
+\end{align*}
+\begin{align*}
+  A &= \set{ 5, 12, 16, 23, 44, 47, 50, 61, 67, 81}\\
+  X &= \set{5,12,16,23}\\
+  Y &= \set{12,44}
+\end{align*}
+
+
+\end{frame}
+
+\bfr{Pigeonhole Principle Example}
+
+{\bf Proposition}  If $A$ is any set of 10 integers between 1 and 100,
+then there exist two different subsets $X,Y\subseteq A$ for which the
+sum of elelments in $X$ equals the sum of elements in $Y$.
+
+\vfill
+
+{\it Proof.}  Suppose $A$ is as stated and $X\subseteq A$.
+
+Then $X$ has no more than 10 elements between 1 and 100, so the sum of
+all elements in $X$ is less than 1000.
+
+How many subsets of $A$ are there?
+
+\pause
+
+\[ |\mathcal{P}(A)| = 2^{10} = 1024 \]
+
+\pause
+By the pigeonhole principle, two of these sets must have the same sum.
+
+
+\end{frame}
+
+\bfr{Pigeonhole Principle Example}
+
+{\bf Proposition} There are at least two people in Washington State
+with the same number of hairs on their heads.
+
+\vfill\pause
+
+{\it Proof.}
+
+The population of Washington is more than seven million.
+
+Every human head has fewer than one million hairs.
+
+By the pigeonhole principle, two Washingtonians must have the same
+number of hairs on their head.
+
+\end{frame}
+
 \end{document}
+
