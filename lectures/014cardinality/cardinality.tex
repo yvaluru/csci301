@@ -496,5 +496,226 @@ number of hairs on their head.
 
 \end{frame}
 
+\bfr{Composition}
+
+{\bf Definition 12.5}  Suppose $f:A\rightarrow B$ and $g:B\rightarrow
+C$ are functions with the property that the codomain of $f$ is the
+domain of $g$.  The {\bf composition} of $f$ with $g$, denoted $g\circ
+f$, is defined as follows.
+
+For all $x\in A$:
+\[ g\circ f(x) = g(f(x)) \]
+
+\grf{0.5}{composition.png}
+
+\end{frame}
+
+\bfr{Inverse Functions}
+
+{\bf Definition 12.6}  Given a set $A$, the {\bf identity function} on
+$A$ is the function $i_A(x)=x$ for all $x\in A$.
+\vfill
+
+{\bf Definition 12.7}  Given a relation $R$ from $A$ to $B$, the {\bf
+  inverse relation} of $R$ is the relation from $B$ to $A$ defined as
+\[ R^{-1} = \set{(y,x) : (x,y)\in R} \]
+
+\end{frame}
+
+\bfr{Example Inverses}
+\grf{0.75}{inversef}
+\grf{0.75}{inverseg}
+\vfill
+
+$f, g, f^{-1}$ are functions.
+\hfill
+$g^{-1}$ is not a function.
+
+
+\end{frame}
+
+\bfr{Function Inverses}
+
+{\bf Theorem 12.3}  Let $f: A\rightarrow B$ be a function.
+
+$f$ is
+bijective if and only if the inverse relation $f^{-1}$ is a function
+from $B$ to $A$.
+
+\end{frame}
+
+\bfr{Image and Preimage}
+
+{\bf Definition 12.9}  Suppose $f:A\rightarrow B$ is a function.
+\begin{enumerate}
+\item If $X\subseteq A$ the {\bf image} of $X$ is the set
+  \[ f(X) = \set{f(x) : x\in X} \subseteq B \]
+\item If $Y\subseteq B$ the {\bf preimage} of $Y$ is the set
+  \[ f^{-1}(Y) = \set{x\in A : f(x) \in Y} \]
+\end{enumerate}
+\vfill
+
+Note that $f$ denotes two functions:
+\begin{description}
+\item $f:A\rightarrow B$
+\item  $f:\mathcal{P}(A)\rightarrow \mathcal{P}(B)$
+\end{description}
+
+Note that $f^{-1}(X)$ is a function even if $f$ is not invertible:
+\begin{description}
+\item  $f^{-1}:\mathcal{P}(B)\rightarrow \mathcal{P}(A)$
+\end{description}
+
+\end{frame}
+
+\bfr{Cardinality}
+
+{\bf Definition 13.1}  Two sets $A$ and $B$ have the {\bf same
+  cardinality}, written $|A| = |B|$, if there exists a bijective
+function $f:A\rightarrow B$.
+\vfill
+
+\grf{1.0}{nobijection}
+
+\end{frame}
+
+\bfr{$|\ints| = |\nats|$}
+
+{\huge
+\begin{tabular}{c|cccccccccc}
+\nats&  1&2&3&4&5&6&7&8&9&...\\\hline
+\ints&  0  &1&-1&2&-2&3&-3&4&-4&...
+\end{tabular}
+}
+
+\end{frame}
+
+\bfr{$|\nats| \neq |\mathbb{R}|$}
+
+\grf{0.5}{diagonal}
+
+$b= 0.01010001001000...$ is not in the table.
+\end{frame}
+
+\bfr{Countable and Uncountable Sets}
+
+{\bf Definition 13.2}  Suppose $A$ is a set.
+
+Then $A$ is {\bf countably infinite} if $|\nats| = |A|$.
+
+$A$ is {\bf uncountable} if $A$ is infinite and $|\nats| \neq |A|$.
+
+$A$ is {\bf countable} if it is finite or countably infinite.
+
+\vfill\pause
+{\bf Theorem 13.3} A set $A$ is countably infinite if and only if its
+elements can be arranged in an infinite list $a_1, a_2, a_3, a_4,
+...$.
+
+
+\end{frame}
+
+\bfr{The set of rational numbers, $\mathbb{Q}
+ = \set{\frac{a}{b} : a\in\ints, b\in\nats}
+ $}
+\grf{0.8}{rationals}
+\end{frame}
+
+\bfr{$\mathbb{Q}$ is countably infinite.}
+\grf{0.7}{rationalsnake}
+\end{frame}
+
+\bfr{If $A$ and $B$ are countably infinite, then so is $A\times B$}
+\grf{0.7}{atimesb}
+\end{frame}
+
+\bfr{Comparing cardinalities}
+
+{\bf Definition 13.4}  Suppose $A$ and $B$ are sets.
+\begin{enumerate}
+\item $|A| = |B|$ means there is a bijection $A\rightarrow B$.
+\item $|A| < |B|$ means there is an injection $A\rightarrow B$
+  but no surjection.
+\item $|A| \leq |B|$ means $|A| < |B|$ or $|A| = |B||$.
+\end{enumerate}
+\vfill
+
+\grf{1.0}{nobijection}
+\end{frame}
+
+\bfr{Size of the power set}
+
+{\bf Theorem 13.7}  If $A$ is any set, then $|A| < |\mathcal{P}(A)|$.
+
+\vfill
+
+{\it Proof.}
+
+{\bf There exists an injection:}
+
+$g(a) = \set{a}$ for $a\in A$ is an injection $A\rightarrow
+\mathcal{P}(A)$.
+
+\vfill
+
+{\bf There is no surjection:}
+
+Suppose $f:A\rightarrow\mathcal{P}(A)$ is a surjection.
+
+Let $B = \set{x\in A : x\not\in f(x)} \subseteq A$.
+
+Since $f$ is a surjection, there is $a\in A$ with $f(a) = B$.
+
+{\bf Case 1:} $a\in B$.  Then the definition of $B$ implies $a\not\in
+B$.
+
+{\bf Case 2:} $a\not\in B$.  Then the definition of $B$ implies $a\in
+B$.
+
+In both cases we have a contradiction, so $f$ cannot be a surjection.
+\end{frame}
+
+\bfr{Consequences of Theorem 13.7}
+
+\[
+|\nats| < |\mathcal{P}(\nats)|
+< |\mathcal{P}(\mathcal{P}(\nats))|
+< |\mathcal{P}(\mathcal{P}(\mathcal{P}(\nats)))|
+< |\mathcal{P}(\mathcal{P}(\mathcal{P}(\mathcal{P}(\nats))))|
+< ...
+\]
+
+
+\end{frame}
+
+\bfr{Some Theorems acout Countability}
+
+{\bf Theorem 13.8} An infinite subset of a countably infinite set is
+countably infinite.
+
+\vfill
+
+{\bf Theorem 13.9} If $U\subseteq A$ and $U$ is uncountable, then $A$
+is uncountable.
+
+
+\vfill
+
+{\bf Theorem 13.10 (The Cantor-Bernstein-Schroeder Theorem)}
+
+If $|A| \leq |B|$ and $|B|\leq |A|$, then $|A| = |B|$.
+
+In other words, if there are injections $f:A\rightarrow B$ and
+$g:B\rightarrow A$, then there is a bijection $h:A\rightarrow B$.
+
+\vfill
+
+{\bf Theorem 13.11}  $|\mathbb{R}| = |\mathcal{P}(\mathbb{N})|$
+
+{\it Proof.}  Uses the CBS theorem.
+
+
+\end{frame}
+
 \end{document}
 

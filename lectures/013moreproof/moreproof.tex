@@ -20,7 +20,7 @@
 \newcommand{\xor}{\oplus}
 \newcommand{\then}{\ensuremath{\Rightarrow}}
 \newcommand{\lcm}{\mbox{lcm}}
-\newcommand{\QED}{\hfill\ensuremath{\blacksquare}}
+\newcommand{\QED}{\mbox{}\hfill\ensuremath{\blacksquare}}
 
 \newcommand{\grf}[2]{\centerline{\includegraphics[width=#1\textwidth]{#2}}}
 \newcommand{\tw}{\textwidth}
@@ -117,7 +117,7 @@ statements are equivalent:
 {\bf Proposition} There exists an even prime number.
 \pause
 
-{\it Proof.} Two is an even prime number.
+{\it Proof.} Two is an even prime number.\QED
 
 \pause\vfill
 
@@ -129,7 +129,7 @@ the sum of two perfect cubes in two different ways.
 \begin{align*}
   1^3 + 12^3 &= 1729\\
   9^3 + 10^3 &= 1729
-\end{align*}
+\end{align*}\QED
 \end{frame}
 
 
@@ -165,8 +165,11 @@ Then show that it is the largest such number.
 $k,\ell\in\ints$ for which $\gcd(a,b)=ak+b\ell$.
 
 \vfill
-{\it Proof.}  $d=ak+b\ell$ is the smallest positive element of
+    {\it Proof (continued).}
+
+    $d=ak+b\ell$ is the smallest positive element of
 $A=\set{ax+by : x,y\in\ints}$.
+
 Show that $d \mid a$.
 
 Use division algorithm: $a = qd + r$.
@@ -210,7 +213,7 @@ d &= \gcd(a,b)
   {\bf How to show $a\in\set{x:P(x)}$}
   
   \fbox{\parbox{0.6\textwidth}{
-    Show that $P(a)$ is true.
+    Show that $P(a)$ is true.\QED
   }}
 
   \vfill
@@ -219,7 +222,7 @@ d &= \gcd(a,b)
   
   \fbox{\parbox{0.6\textwidth}{
     1.    Verify that $a\in S$.\\    
-    2.    Show that $P(a)$ is true.
+    2.    Show that $P(a)$ is true.\QED
   }}
 
 \end{frame}
@@ -276,7 +279,9 @@ d &= \gcd(a,b)
 \bfr{Disproof}
 
 \fbox{\parbox{0.9\textwidth}{
-    {\bf How to disprove $P$:}  Prove $\neg P$.
+    {\bf How to disprove $P$:}
+
+    Prove $\neg P$. \QED
 }}
 
 \pause\vfill
@@ -284,7 +289,7 @@ d &= \gcd(a,b)
 \fbox{\parbox{0.9\textwidth}{
     {\bf How to disprove $\forall x\in S, P(x)$:}
 
-    Produce an example of $x\in S$ where $P(x)$ is false.
+    Produce an example of $x\in S$ where $P(x)$ is false. \QED
 }}
 
 
@@ -294,6 +299,7 @@ d &= \gcd(a,b)
     {\bf How to disprove $P(x)\then Q(x)$:}
 
     Produce an example of $x$ where $P(x)$ is true but $Q(x)$ is false.
+    \QED
 }}
 
 
@@ -365,7 +371,7 @@ Therefore,
 Then
 \begin{align*}
   1+3+5+7 +... + 2(k+1) -1 &=\\
-  1+3+5+7 +...+(2k-1) + (2(k+1) -1) &= k^2 + (2(k+1) -1)\\
+{\color{blue}  1+3+5+7 +...+(2k-1)} + (2(k+1) -1) &= {\color{blue} k^2} + (2(k+1) -1)\\
   &= k^2 + 2d + 1\\
   &= (k+1)^2
 \end{align*}
@@ -437,8 +443,8 @@ Therefore $5\mid((k+1)^5 - (k+1))$.
 Then $(k^5-k) = 5a$ for some $a\in\nats$.
 \begin{align*}
   (k+1)^5 - (k+1) &= k^5 + 5k^4 + 10k^3 + 10k^2 + 5k + 1 - k - 1\\
-  &= (k^5-k) + 5k^4 + 10k^3 + 10k^2 + 5k\\
-  &= 5a + 5k^4 + 10k^3 + 10k^2 + 5k\\
+  &= {\color{blue}(k^5-k)} + 5k^4 + 10k^3 + 10k^2 + 5k\\
+  &= {\color{blue}5a} + 5k^4 + 10k^3 + 10k^2 + 5k\\
   &= 5(a + k^4 + 2k^3 + 2k^2 + k)
 \end{align*}
 Then $((k+1)^5 - (k+1)) = 5b$ for some  $b\in\nats$.

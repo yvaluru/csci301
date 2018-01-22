@@ -20,7 +20,7 @@
 \newcommand{\xor}{\oplus}
 \newcommand{\then}{\ensuremath{\Rightarrow}}
 \newcommand{\lcm}{\mbox{lcm}}
-\newcommand{\QED}{\hfill\ensuremath{\blacksquare}}
+\newcommand{\QED}{\mbox{}\hfill\ensuremath{\blacksquare}}
 \newcommand{\equivmod}[3]{#1 \equiv #2\ (\mbox{mod } #3)}
 \newcommand{\nequivmod}[3]{#1 \not\equiv #2\ (\mbox{mod } #3)}
 
@@ -306,6 +306,7 @@ and $(-1)^n = -1$.  Thus \[
 which is a multiple of 4.
 
 These cases show that $1+(-1)^n(2n-1)$ is always a multiple of 4.
+\QED
 
 \end{frame}
 
@@ -321,6 +322,8 @@ Without loss of generality, suppose $m$ is even and $n$ is odd.
 Thus $m=2a$ and $n=2b+1$ for some $a,b\in\ints$.
 
 Therefore $m+n=2a+2b+1 = 2(a+b)+1$, which is odd by definition.
+\QED
+
 \end{frame}
 
 
@@ -382,7 +385,7 @@ Thus $7x+9 = 2b+1$ where $b$ is the integer $7a+1$.
 
 By definition, $7x+9$ is odd.
 
-Therefore $7x+9$ is not even.
+Therefore $7x+9$ is not even. \QED
 
 \end{frame}
 
@@ -427,9 +430,11 @@ By definition, $a-b = nc$ for some $c\in\ints$.
   (a-b)(a+b) &= nc(a+b)\\
   a^2 - b^2 &= nc(a+b)
 \end{align*}
-Since $c(a+b)\in\ints$, this tells us that $n\mid (a^2-b^2)$.
+Let $d=c(a+b)$, so $d\in\ints$ and $a^2-b^2 = nd$.
 
-By definition, $\equivmod{a^2}{b^2}{n}$.
+This tells us that $n\mid (a^2-b^2)$.
+
+So, by definition, $\equivmod{a^2}{b^2}{n}$.\QED
 
 \end{frame}
 

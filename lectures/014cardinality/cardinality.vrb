@@ -1,16 +1,27 @@
-\frametitle{ Pigeonhole Principle Example }
+\frametitle{ Some Theorems acout Countability }
 
-{\bf Proposition} There are at least two people in Washington State
-with the same number of hairs on their heads.
+{\bf Theorem 13.8} An infinite subset of a countably infinite set is
+countably infinite.
 
-\vfill\pause
+\vfill
 
-{\it Proof.}
+{\bf Theorem 13.9} If $U\subseteq A$ and $U$ is uncountable, then $A$
+is uncountable.
 
-The population of Washington is more than seven million.
 
-Every human head has fewer than one million hairs.
+\vfill
 
-By the pigeonhole principle, two Washingtonians must have the same
-number of hairs on their head.
+{\bf Theorem 13.10 (The Cantor-Bernstein-Schroeder Theorem)}
+
+If $|A| \leq |B|$ and $|B|\leq |A|$, then $|A| = |B|$.
+
+In other words, if there are injections $f:A\rightarrow B$ and
+$g:B\rightarrow A$, then there is a bijection $h:A\rightarrow B$.
+
+\vfill
+
+{\bf Theorem 13.11}  $|\mathbb{R}| = |\mathcal{P}(\mathbb{N})|$
+
+{\it Proof.}  Uses the CBS theorem.
+
 
