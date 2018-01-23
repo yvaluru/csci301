@@ -94,6 +94,67 @@ Scheme Notes 03
 %  % You might wish to add the option [pausesections]
 %\end{frame}
 
+\sect{Recursion {\em vs.} Tail-recursion}
+
+\[ a^b = \left\{\begin{array}{ll} 1 & \mbox{ if $b=0$}\\
+    a(a^{b-1}) & \mbox{ otherwise}
+  \end{array}\right.
+  \]
+
+\begin{Verbatim}
+(define pow-rec
+  (lambda (a b)
+    (if (zero? b) 
+        1
+        (* a (pow-rec a (- b 1))))))
+\end{Verbatim}
+\vfill\pause
+
+\begin{Verbatim}
+(define pow-iter
+  (lambda (a b)
+    (define pow-iter-loop
+      (lambda (b product)
+        (if (zero? b)
+            product
+            (loop (- b 1) (* a product)))))
+    (loop b 1)))
+\end{Verbatim}
+\end{frame}
+
+\sect{Named {\tt let}}
+
+\begin{Verbatim}
+(define pow-iter
+  (lambda (a b)
+    (define loop
+      (lambda (b product)
+        (if (zero? b)
+            product
+            (loop (- b 1) (* a product)))))
+    (loop b 1)))
+\end{Verbatim}
+\vfill
+\begin{Verbatim}
+(define pow-iter-2
+  (lambda (a b)
+    (let loop ((b b) (product 1))
+      (if (zero? b)
+          product
+          (loop (- b 1) (* a product))))))
+\end{Verbatim}
+\end{frame}
+
+\sect{Fast recursion}
+\begin{Verbatim}
+(define pow-fast
+  (lambda (a b)
+    (cond ((zero? b) 1)
+          ((even? b) (sqr (pow-fast a (/ b 2))))
+          (else (* a (pow-fast a (- b 1)))))))
+\end{Verbatim}
+\end{frame}
+
 
 \sect{Lists}
 \begin{Verbatim}
