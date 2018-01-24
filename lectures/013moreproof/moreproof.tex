@@ -548,6 +548,25 @@ Then $((k+1)^5 - (k+1)) = 5b$ for some  $b\in\nats$.
 Therefore $5\mid((k+1)^5 - (k+1))$.
 \QED
 \end{frame}
+
+\bfr{SymPy}
+
+For some help with large algebraic expressions:
+\url{http://www.sympy.org/}
+
+\vfill
+\begin{Verbatim}[frame=single]
+>>> from sympy import *
+>>> k = symbols('k')
+>>> expr = (k+1)^5 - (k + 1)
+>>> expand(expr)
+k**5 + 5*k**4 + 10*k**3 + 10*k**2 + 4*k
+>>> expand(expr - (k**5 - k))
+5*k**4 + 10*k**3 + 10*k**2 + 5*k
+\end{Verbatim}
+  
+
+\end{frame}
   
 \bfr{Strong Induction}
 
