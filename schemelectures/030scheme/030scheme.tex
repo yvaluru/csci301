@@ -147,6 +147,15 @@ Scheme Notes 03
 \end{frame}
 
 \sect{Fast recursion}
+\[
+a^b = \left\{\begin{array}{ll}
+1 & \mbox{ if $b=0$}\\
+(a^{b/2})^2 & \mbox{ if $b$ is even}\\
+a(a^{b-1}) & \mbox{ otherwise}
+\end{array}\right.
+\]
+\vfill
+
 \begin{Verbatim}[commandchars=\\\{\}]
 (define pow-fast
   (lambda (a b)

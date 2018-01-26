@@ -86,6 +86,9 @@ procedure {\tt distribute}.  It works like this:
 > (distribute 7 '((1 2 3) (4 5) (1 1 1)))
 '((7 1 2 3) (7 4 5) (7 1 1 1))
 \end{Verbatim}
+Note that the order returned by {\tt distribute } will depend on
+whether you use tail-recursion.  (Why?)
+
 Now just append the two lists to get the final result.
 
 \paragraph{Sorting the results:}
