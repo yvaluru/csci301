@@ -78,7 +78,7 @@ program to create sublists of a list.
 }
 This procedure should be easy, given the above insights.  If the list
 is empty, the value is simple.  If the list {\tt ls} is not empty,
-then find the sublists of {\tt (cdr ls)}.  Let this saved in a local
+then find the sublists of {\tt (cdr ls)}.  Save this list in a local
 variable.  (This represents the set $A_0$.) Call another procedure to
 add the {\tt (car ls)} to each of the lists in this set.  Call this
 procedure {\tt distribute}.  It works like this:
@@ -126,7 +126,7 @@ the first differing element is smaller in the first list, and
 #t
 \end{Verbatim}
 And another function, {\tt length-ordered?}, which returns \verb|#t|
-if the first length is list is shorter, \verb|#f| if the first list is
+if the first list is shorter, \verb|#f| if the first list is
 longer, and the result of {\tt element-ordered?} if they are the same
 length. 
 
