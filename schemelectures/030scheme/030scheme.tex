@@ -3,6 +3,7 @@
 \usepackage{hyperref}
 \usepackage{multicol}
 \usepackage{graphicx}
+\usepackage{xcolor}
 \newtheorem{theo}{Theorem}[section]
 
 \newcommand{\myfig}[1]{\centerline{\includegraphics[scale=0.25]{figures/#1.png}}}
@@ -124,34 +125,34 @@ Scheme Notes 03
 
 \sect{Named {\tt let}}
 
-\begin{Verbatim}
+\begin{Verbatim}[commandchars=\\\{\}]
 (define pow-iter
   (lambda (a b)
     (define loop
       (lambda (b product)
-        (if (zero? b)
-            product
-            (loop (- b 1) (* a product)))))
+{\color{blue}        (if (zero? b)}
+{\color{blue}            product}
+{\color{blue}            (loop (- b 1) (* a product)))))}
     (loop b 1)))
 \end{Verbatim}
 \vfill
-\begin{Verbatim}
+\begin{Verbatim}[commandchars=\\\{\}]
 (define pow-iter-2
   (lambda (a b)
     (let loop ((b b) (product 1))
-      (if (zero? b)
-          product
-          (loop (- b 1) (* a product))))))
+{\color{blue}      (if (zero? b)}
+{\color{blue}          product}
+{\color{blue}          (loop (- b 1) (* a product))))))}
 \end{Verbatim}
 \end{frame}
 
 \sect{Fast recursion}
-\begin{Verbatim}
+\begin{Verbatim}[commandchars=\\\{\}]
 (define pow-fast
   (lambda (a b)
     (cond ((zero? b) 1)
-          ((even? b) (sqr (pow-fast a (/ b 2))))
-          (else (* a (pow-fast a (- b 1)))))))
+          ((even? b) (sqr {\color{blue}(pow-fast a (/ b 2))))}
+          (else (* a {\color{blue}(pow-fast a (- b 1)))))))}
 \end{Verbatim}
 \end{frame}
 
@@ -164,8 +165,30 @@ A {\bf list} is either:
 \item {\bf an item} and a {\bf list}
 \end{enumerate}
 
+\vfill\pause
+
+Scheme uses:
+\begin{enumerate}
+\item the {\bf null pointer} for the empty list, and
+\item a {\bf cons cell} of two pointers for a non-empty list.
+\item The first pointer in a cons cell is called {\bf car}.
+\item The second pointer in a cons cell is called {\bf cdr}.
+\item The empty list has predicate {\bf empty?}.
+\end{enumerate}
+
+\includegraphics[width=0.5\textwidth]{simplelist}
+
 \end{frame}
-\sect{Lists in Scheme:}
+\sect{Scheme Programs are Lists}
+
+
+\includegraphics[width=\textwidth]{boxarrow}
+
+\fbox{\tt (+ x (/ (* x x) (- x y)))}
+
+\end{frame}
+
+\sect{Building Lists in Scheme:}
 \begin{enumerate}
 \item The empty list in Scheme:  \fbox{\tt '()}
 \item Create a list from 3 and the empty list: \fbox{\tt (cons 3 '()) $\Rightarrow$ (3)}
@@ -187,18 +210,6 @@ A {\bf list} is either:
 
 \end{frame}
 
-\sect{Pictures of Lists}
-
-\includegraphics[width=\textwidth]{boxarrow}
-
-\begin{itemize}
-\item The empty list has predicate {\tt empty?}.
-\item The first pointer in a cons cell is called {\tt car}.
-\item The second pointer in a cons cell is called {\tt cdr}.
-\item Run {\tt boxarrow.rkt} for pictures.
-\end{itemize}
-
-\end{frame}
 
 \sect{An improper list results in a dot:}
 \begin{itemize}

@@ -2,8 +2,8 @@
 \BOOKMARK [2][]{Outline0.2}{Named let}{}% 2
 \BOOKMARK [2][]{Outline0.3}{Fast recursion}{}% 3
 \BOOKMARK [2][]{Outline0.4}{Lists}{}% 4
-\BOOKMARK [2][]{Outline0.5}{Lists in Scheme:}{}% 5
-\BOOKMARK [2][]{Outline0.6}{Pictures of Lists}{}% 6
+\BOOKMARK [2][]{Outline0.5}{Scheme Programs are Lists}{}% 5
+\BOOKMARK [2][]{Outline0.6}{Building Lists in Scheme:}{}% 6
 \BOOKMARK [2][]{Outline0.7}{An improper list results in a dot:}{}% 7
 \BOOKMARK [2][]{Outline0.8}{length}{}% 8
 \BOOKMARK [2][]{Outline0.9}{nth}{}% 9
