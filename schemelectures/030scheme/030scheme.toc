@@ -4,20 +4,23 @@
 \beamer@sectionintoc {2}{Named {\tt let}}{4}{0}{2}
 \beamer@sectionintoc {3}{Fast recursion}{5}{0}{3}
 \beamer@sectionintoc {4}{Lists}{6}{0}{4}
-\beamer@sectionintoc {5}{length}{7}{0}{5}
-\beamer@sectionintoc {6}{nth}{9}{0}{6}
-\beamer@sectionintoc {7}{last}{11}{0}{7}
-\beamer@sectionintoc {8}{scale-list}{13}{0}{8}
-\beamer@sectionintoc {9}{increment-list}{15}{0}{9}
-\beamer@sectionintoc {10}{map}{17}{0}{10}
-\beamer@sectionintoc {11}{scale-list using map}{19}{0}{11}
-\beamer@sectionintoc {12}{increment-list using map}{21}{0}{12}
-\beamer@sectionintoc {13}{append}{23}{0}{13}
-\beamer@sectionintoc {14}{remove}{25}{0}{14}
-\beamer@sectionintoc {15}{Trees}{27}{0}{15}
-\beamer@sectionintoc {16}{count-leaves}{29}{0}{16}
-\beamer@sectionintoc {17}{fringe}{31}{0}{17}
-\beamer@sectionintoc {18}{sum-fringe}{33}{0}{18}
-\beamer@sectionintoc {19}{map-tree}{35}{0}{19}
-\beamer@sectionintoc {20}{scale-tree using map-tree}{37}{0}{20}
-\beamer@sectionintoc {21}{increment-tree using map-tree}{39}{0}{21}
+\beamer@sectionintoc {5}{Lists in Scheme:}{7}{0}{5}
+\beamer@sectionintoc {6}{Pictures of Lists}{9}{0}{6}
+\beamer@sectionintoc {7}{An improper list results in a dot:}{10}{0}{7}
+\beamer@sectionintoc {8}{length}{11}{0}{8}
+\beamer@sectionintoc {9}{nth}{13}{0}{9}
+\beamer@sectionintoc {10}{last}{15}{0}{10}
+\beamer@sectionintoc {11}{scale-list}{17}{0}{11}
+\beamer@sectionintoc {12}{increment-list}{19}{0}{12}
+\beamer@sectionintoc {13}{map}{21}{0}{13}
+\beamer@sectionintoc {14}{scale-list using map}{23}{0}{14}
+\beamer@sectionintoc {15}{increment-list using map}{25}{0}{15}
+\beamer@sectionintoc {16}{append}{27}{0}{16}
+\beamer@sectionintoc {17}{remove}{29}{0}{17}
+\beamer@sectionintoc {18}{Trees}{31}{0}{18}
+\beamer@sectionintoc {19}{count-leaves}{33}{0}{19}
+\beamer@sectionintoc {20}{fringe}{35}{0}{20}
+\beamer@sectionintoc {21}{sum-fringe}{37}{0}{21}
+\beamer@sectionintoc {22}{map-tree}{39}{0}{22}
+\beamer@sectionintoc {23}{scale-tree using map-tree}{41}{0}{23}
+\beamer@sectionintoc {24}{increment-tree using map-tree}{43}{0}{24}

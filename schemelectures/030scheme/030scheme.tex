@@ -101,23 +101,23 @@ Scheme Notes 03
   \end{array}\right.
   \]
 
-\begin{Verbatim}
+\begin{Verbatim}[commandchars=\\\{\}]
 (define pow-rec
   (lambda (a b)
     (if (zero? b) 
         1
-        (* a (pow-rec a (- b 1))))))
+        (* a {\color{blue}(pow-rec a (- b 1))} ))))
 \end{Verbatim}
 \vfill\pause
 
-\begin{Verbatim}
+\begin{Verbatim}[commandchars=\\\{\}]
 (define pow-iter
   (lambda (a b)
-    (define pow-iter-loop
+    (define loop
       (lambda (b product)
         (if (zero? b)
             product
-            (loop (- b 1) (* a product)))))
+            {\color{blue}(loop (- b 1) (* a product))} )))
     (loop b 1)))
 \end{Verbatim}
 \end{frame}
@@ -157,23 +157,63 @@ Scheme Notes 03
 
 
 \sect{Lists}
-\begin{Verbatim}
-(define a (list 1 2 3 4 5))
-(define b (list 6 7 8))
-(define c '(1 2 3 4 5))
-(define d (cons 6 (cons 7 (cons 8 '()))))
-\end{Verbatim}
+
+A {\bf list} is either:
+\begin{enumerate}
+\item the {\bf empty list}, or
+\item {\bf an item} and a {\bf list}
+\end{enumerate}
+
+\end{frame}
+\sect{Lists in Scheme:}
+\begin{enumerate}
+\item The empty list in Scheme:  \fbox{\tt '()}
+\item Create a list from 3 and the empty list: \fbox{\tt (cons 3 '()) $\Rightarrow$ (3)}
+\item Create the list \fbox{\tt (4 7 2)}:
+  \fbox{\tt (cons 4 (cons 7 (cons 2 '())))$\Rightarrow$ (4 7 2)}
+\item Shorthand for long lists:
+  \fbox{\tt (list 4 7 2)  $\Rightarrow$ (4 7 2)}
+\pause
+\item Using {\tt quote}:
+  \fbox{\tt '(4 7 2)  $\Rightarrow$ (4 7 2)}\\
+  \fbox{\tt '(+ 4 7 2)  $\Rightarrow$ (+ 4 7 2)}\\
+  \fbox{\tt '(a b c) $\Rightarrow$ (a b c)}\\
+  \fbox{\tt (a b c) $\Rightarrow$ {\em error}}\\
+  \fbox{\tt (+ 4 7 2)  $\Rightarrow$ 13}\\
+  \fbox{\tt '(list (+ 2 2) 7 2)  $\Rightarrow$ (list (+ 2 2) 7 2)}\\
+  \fbox{\tt (list (+ 2 2) 7 2)  $\Rightarrow$ (4 7 2)}\\
+  
+\end{enumerate}
+
+\end{frame}
+
+\sect{Pictures of Lists}
+
+\includegraphics[width=\textwidth]{boxarrow}
 
 \begin{itemize}
+\item The empty list has predicate {\tt empty?}.
+\item The first pointer in a cons cell is called {\tt car}.
+\item The second pointer in a cons cell is called {\tt cdr}.
 \item Run {\tt boxarrow.rkt} for pictures.
 \end{itemize}
 
 \end{frame}
+
+\sect{An improper list results in a dot:}
+\begin{itemize}
+\item \fbox{\tt (cons 4 8) $\Rightarrow$ (4 . 8)}
+\item \fbox{\tt (cons 3 (cons 5 (cons 7 9))) $\Rightarrow$ (3 5 7 . 9)}
+\item Run {\tt boxarrow.rkt} for pictures.
+\end{itemize}
+\includegraphics[width=0.5\textwidth]{improperlist}
+\end{frame}
+
 \sect{length}
 \pause
 \begin{Verbatim}
 (define (length lst)
-  (if (null? lst)
+  (if (empty? lst)
       0
       (+ 1 (length (cdr lst)))))
 \end{Verbatim}
@@ -182,7 +222,7 @@ Scheme Notes 03
 \pause
 \begin{Verbatim}
 (define (nth lst n)
-  (cond ((null? lst) nil)
+  (cond ((empty? lst) '())
         ((= n 0) "Not defined")
         ((= n 1) (car lst))
         (else (nth (cdr lst) (- n 1)))))
@@ -192,8 +232,8 @@ Scheme Notes 03
 \pause
 \begin{Verbatim}
 (define (last lst)
-  (cond ((null? lst) nil)
-        ((null? (cdr lst)) (car lst))
+  (cond ((empty? lst) '())
+        ((empty? (cdr lst)) (car lst))
         (else (last (cdr lst)))))
 \end{Verbatim}
 \end{frame}
@@ -201,8 +241,8 @@ Scheme Notes 03
 \pause
 \begin{Verbatim}
 (define (scale-list lst n)
-  (if (null? lst)
-      nil
+  (if (empty? lst)
+      '()
       (cons (* n (car lst))
             (scale-list (cdr lst) n))))
 \end{Verbatim}
@@ -211,8 +251,8 @@ Scheme Notes 03
 \pause
 \begin{Verbatim}
 (define (increment-list lst)
-  (if (null? lst)
-      nil
+  (if (empty? lst)
+      '()
       (cons (+ 1 (car lst))
             (increment-list (cdr lst)))))
 \end{Verbatim}
@@ -221,8 +261,8 @@ Scheme Notes 03
 \pause
 \begin{Verbatim}
 (define (map lst op)
-  (if (null? lst)
-      nil
+  (if (empty? lst)
+      '()
       (cons (op (car lst))
             (map (cdr lst) op))))
 \end{Verbatim}
@@ -245,7 +285,7 @@ Scheme Notes 03
 \pause
 \begin{Verbatim}
 (define (append lst1 lst2)
-  (if (null? lst1)
+  (if (empty? lst1)
       lst2
       (cons (car lst1)
             (append (cdr lst1) lst2))))
@@ -255,7 +295,7 @@ Scheme Notes 03
 \pause
 \begin{Verbatim}
 (define (remove n lst)
-  (cond ((null? lst) nil)
+  (cond ((empty? lst) '())
         ((= n (car lst)) (remove n (cdr lst)))
         (else (cons (car lst)
                     (remove n (cdr lst))))))
@@ -275,13 +315,13 @@ Scheme Notes 03
 \begin{itemize}
 \item Run {\tt boxarrow.rkt} for pictures.
 \end{itemize}
-
+\includegraphics[width=\textwidth]{tree}
 \end{frame}
 \sect{count-leaves}
 \pause
 \begin{Verbatim}
 (define (count-leaves tree)
-  (cond ((null? tree) 0)
+  (cond ((empty? tree) 0)
         ((not (pair? tree)) 1)
         (else (+ (count-leaves (car tree))
                  (count-leaves (cdr tree))))))
@@ -291,7 +331,7 @@ Scheme Notes 03
 \pause
 \begin{Verbatim}
 (define (fringe tree)
-  (cond ((null? tree) nil)
+  (cond ((empty? tree) '())
         ((not (pair? tree)) (list tree))
         (else (append (fringe (car tree))
                       (fringe (cdr tree))))))
@@ -301,7 +341,7 @@ Scheme Notes 03
 \pause
 \begin{Verbatim}
 (define (sum-fringe tree)
-  (cond ((null? tree) 0)
+  (cond ((empty? tree) 0)
         ((number? tree) tree)
         (else (+ (sum-fringe (car tree))
                  (sum-fringe (cdr tree))))))
@@ -311,7 +351,7 @@ Scheme Notes 03
 \pause
 \begin{Verbatim}
 (define (map-tree tree op)
-  (cond ((null? tree) nil)
+  (cond ((empty? tree) '())
         ((number? tree) (op tree))
         (else (cons (map-tree (car tree) op)
                     (map-tree (cdr tree) op)))))

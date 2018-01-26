@@ -2,20 +2,23 @@
 \BOOKMARK [2][]{Outline0.2}{Named let}{}% 2
 \BOOKMARK [2][]{Outline0.3}{Fast recursion}{}% 3
 \BOOKMARK [2][]{Outline0.4}{Lists}{}% 4
-\BOOKMARK [2][]{Outline0.5}{length}{}% 5
-\BOOKMARK [2][]{Outline0.6}{nth}{}% 6
-\BOOKMARK [2][]{Outline0.7}{last}{}% 7
-\BOOKMARK [2][]{Outline0.8}{scale-list}{}% 8
-\BOOKMARK [2][]{Outline0.9}{increment-list}{}% 9
-\BOOKMARK [2][]{Outline0.10}{map}{}% 10
-\BOOKMARK [2][]{Outline0.11}{scale-list using map}{}% 11
-\BOOKMARK [2][]{Outline0.12}{increment-list using map}{}% 12
-\BOOKMARK [2][]{Outline0.13}{append}{}% 13
-\BOOKMARK [2][]{Outline0.14}{remove}{}% 14
-\BOOKMARK [2][]{Outline0.15}{Trees}{}% 15
-\BOOKMARK [2][]{Outline0.16}{count-leaves}{}% 16
-\BOOKMARK [2][]{Outline0.17}{fringe}{}% 17
-\BOOKMARK [2][]{Outline0.18}{sum-fringe}{}% 18
-\BOOKMARK [2][]{Outline0.19}{map-tree}{}% 19
-\BOOKMARK [2][]{Outline0.20}{scale-tree using map-tree}{}% 20
-\BOOKMARK [2][]{Outline0.21}{increment-tree using map-tree}{}% 21
+\BOOKMARK [2][]{Outline0.5}{Lists in Scheme:}{}% 5
+\BOOKMARK [2][]{Outline0.6}{Pictures of Lists}{}% 6
+\BOOKMARK [2][]{Outline0.7}{An improper list results in a dot:}{}% 7
+\BOOKMARK [2][]{Outline0.8}{length}{}% 8
+\BOOKMARK [2][]{Outline0.9}{nth}{}% 9
+\BOOKMARK [2][]{Outline0.10}{last}{}% 10
+\BOOKMARK [2][]{Outline0.11}{scale-list}{}% 11
+\BOOKMARK [2][]{Outline0.12}{increment-list}{}% 12
+\BOOKMARK [2][]{Outline0.13}{map}{}% 13
+\BOOKMARK [2][]{Outline0.14}{scale-list using map}{}% 14
+\BOOKMARK [2][]{Outline0.15}{increment-list using map}{}% 15
+\BOOKMARK [2][]{Outline0.16}{append}{}% 16
+\BOOKMARK [2][]{Outline0.17}{remove}{}% 17
+\BOOKMARK [2][]{Outline0.18}{Trees}{}% 18
+\BOOKMARK [2][]{Outline0.19}{count-leaves}{}% 19
+\BOOKMARK [2][]{Outline0.20}{fringe}{}% 20
+\BOOKMARK [2][]{Outline0.21}{sum-fringe}{}% 21
+\BOOKMARK [2][]{Outline0.22}{map-tree}{}% 22
+\BOOKMARK [2][]{Outline0.23}{scale-tree using map-tree}{}% 23
+\BOOKMARK [2][]{Outline0.24}{increment-tree using map-tree}{}% 24
