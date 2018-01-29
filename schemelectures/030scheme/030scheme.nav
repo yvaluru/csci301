@@ -86,43 +86,8 @@
 \headcommand {\beamer@subsectionpages {28}{29}}
 \headcommand {\slideentry {17}{0}{1}{30/31}{}{0}}
 \headcommand {\beamer@framepages {30}{31}}
-\headcommand {\sectionentry {18}{Trees}{32}{Trees}{0}}
-\headcommand {\beamer@sectionpages {30}{31}}
+\headcommand {\beamer@partpages {1}{31}}
 \headcommand {\beamer@subsectionpages {30}{31}}
-\headcommand {\slideentry {18}{0}{1}{32/33}{}{0}}
-\headcommand {\beamer@framepages {32}{33}}
-\headcommand {\sectionentry {19}{count-leaves}{34}{count-leaves}{0}}
-\headcommand {\beamer@sectionpages {32}{33}}
-\headcommand {\beamer@subsectionpages {32}{33}}
-\headcommand {\slideentry {19}{0}{1}{34/35}{}{0}}
-\headcommand {\beamer@framepages {34}{35}}
-\headcommand {\sectionentry {20}{fringe}{36}{fringe}{0}}
-\headcommand {\beamer@sectionpages {34}{35}}
-\headcommand {\beamer@subsectionpages {34}{35}}
-\headcommand {\slideentry {20}{0}{1}{36/37}{}{0}}
-\headcommand {\beamer@framepages {36}{37}}
-\headcommand {\sectionentry {21}{sum-fringe}{38}{sum-fringe}{0}}
-\headcommand {\beamer@sectionpages {36}{37}}
-\headcommand {\beamer@subsectionpages {36}{37}}
-\headcommand {\slideentry {21}{0}{1}{38/39}{}{0}}
-\headcommand {\beamer@framepages {38}{39}}
-\headcommand {\sectionentry {22}{map-tree}{40}{map-tree}{0}}
-\headcommand {\beamer@sectionpages {38}{39}}
-\headcommand {\beamer@subsectionpages {38}{39}}
-\headcommand {\slideentry {22}{0}{1}{40/41}{}{0}}
-\headcommand {\beamer@framepages {40}{41}}
-\headcommand {\sectionentry {23}{scale-tree using map-tree}{42}{scale-tree using map-tree}{0}}
-\headcommand {\beamer@sectionpages {40}{41}}
-\headcommand {\beamer@subsectionpages {40}{41}}
-\headcommand {\slideentry {23}{0}{1}{42/43}{}{0}}
-\headcommand {\beamer@framepages {42}{43}}
-\headcommand {\sectionentry {24}{increment-tree using map-tree}{44}{increment-tree using map-tree}{0}}
-\headcommand {\beamer@sectionpages {42}{43}}
-\headcommand {\beamer@subsectionpages {42}{43}}
-\headcommand {\slideentry {24}{0}{1}{44/45}{}{0}}
-\headcommand {\beamer@framepages {44}{45}}
-\headcommand {\beamer@partpages {1}{45}}
-\headcommand {\beamer@subsectionpages {44}{45}}
-\headcommand {\beamer@sectionpages {44}{45}}
-\headcommand {\beamer@documentpages {45}}
-\headcommand {\def \inserttotalframenumber {25}}
+\headcommand {\beamer@sectionpages {30}{31}}
+\headcommand {\beamer@documentpages {31}}
+\headcommand {\def \inserttotalframenumber {18}}

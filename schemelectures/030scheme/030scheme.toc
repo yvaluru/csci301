@@ -17,10 +17,3 @@
 \beamer@sectionintoc {15}{increment-list using map}{26}{0}{15}
 \beamer@sectionintoc {16}{append}{28}{0}{16}
 \beamer@sectionintoc {17}{remove}{30}{0}{17}
-\beamer@sectionintoc {18}{Trees}{32}{0}{18}
-\beamer@sectionintoc {19}{count-leaves}{34}{0}{19}
-\beamer@sectionintoc {20}{fringe}{36}{0}{20}
-\beamer@sectionintoc {21}{sum-fringe}{38}{0}{21}
-\beamer@sectionintoc {22}{map-tree}{40}{0}{22}
-\beamer@sectionintoc {23}{scale-tree using map-tree}{42}{0}{23}
-\beamer@sectionintoc {24}{increment-tree using map-tree}{44}{0}{24}

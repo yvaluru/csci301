@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{fancyvrb}
 \usepackage{hyperref}
+\usepackage{tikz}
 
 \newcommand{\bi}{\begin{itemize}}
 \newcommand{\ii}{\item}
@@ -145,7 +146,7 @@ This set is denoted $[a]$:
 \end{frame}
 
 
-\bfr{Pictures of equivalence relations}
+\bfr{Pictures of equivalence relations on $\{-1,1,2,3,4\}$}
 
 \grf{1.0}{equivalencepics.png}
 
@@ -250,6 +251,39 @@ $.
 
 \end{frame}
 
+\bfr{Relations that are {\bf not} functions}
+
+\begin{tikzpicture}[>=latex]
+\draw (1,2) ellipse (.5 and 2);
+\draw (3,2) ellipse (.5 and 2);
+\node (A) at (1,3) {A};
+\node (B) at (1,2) {B};
+\node (C) at (1,1) {C};
+\node (D) at (3,3) {D};
+\node (E) at (3,2) {E};
+\node (F) at (3,1) {F};
+\draw[->] (A) -- (E);
+\draw[->] (A) -- (D);
+\draw[->] (B) -- (E);
+\draw[->] (C) -- (F);
+\end{tikzpicture}\hfill
+\begin{tikzpicture}[>=latex]
+\draw (1,2) ellipse (.5 and 2);
+\draw (3,2) ellipse (.5 and 2);
+\node (A) at (1,3) {A};
+\node (B) at (1,2) {B};
+\node (C) at (1,1) {C};
+\node (D) at (3,3) {D};
+\node (E) at (3,2) {E};
+\node (F) at (3,1) {F};
+\draw[->] (A) -- (D);
+\draw[->] (B) -- (E);
+\end{tikzpicture}\hfill
+
+
+
+
+\end{frame}
 \bfr{Example function}
 
 \begin{align*}
@@ -268,6 +302,9 @@ $.
   f &= \lambda x . x^2\\\\
   f &= \set{(x,x^2) : x \in \mathbb{R}}
 \end{align*}
+\vfill\pause
+Not complete definition unless you specify domain and codomain:
+\[ f : \mathbb{R} \rightarrow \mathbb{R} \]
 
 \end{frame}
 
@@ -275,8 +312,9 @@ $.
 \begin{align*}
   \phi &: \ints^2 \rightarrow \ints\\\\
   \phi(m,n) &= 6m-9n\\\\
-  \phi &= \set{((m,n),6m-9n) : (m,n)\in\ints^2}
-    \subseteq \ints^2 \times \ints
+  \phi &= \set{((m,n),6m-9n) : (m,n)\in\ints^2}\\
+  &= \set{((0,0),0), ((1,1),-3), ((1,0), 6), ...}\\
+  &\subseteq \ints^2 \times \ints
 \end{align*}
 
 \pause

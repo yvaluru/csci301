@@ -1,7 +1,10 @@
-\frametitle{increment-tree using map-tree} 
+\frametitle{remove} 
 \pause
 \begin{Verbatim}
-(define (increment-tree tree)
-  (map-tree tree inc))
+(define (remove n lst)
+  (cond ((empty? lst) '())
+        ((= n (car lst)) (remove n (cdr lst)))
+        (else (cons (car lst)
+                    (remove n (cdr lst))))))
 \end{Verbatim}
 
