@@ -234,26 +234,57 @@ $f\subseteq A\times B$, satisfying the property that for each $a\in
 A$, the relation $f$ contains exactly one ordered pair of the form
 $(a,b)$.  The statement $(a,b)\in f$ is abbreviated $f(a)=b$.
 
-\vfill\pause
+\end{frame}
 
-{\bf Definition 12.2}
+\bfr{Relations that are functions}
 
-For a function $f:A\rightarrow B$, the set $A$
-is called the {\bf domain} of $f$.
+\begin{tikzpicture}[>=latex,thick]
+\draw (1,2) ellipse (.5 and 2);
+\draw (3,2) ellipse (.5 and 2);
+\node (A) at (1,3) {A};
+\node (B) at (1,2) {B};
+\node (C) at (1,1) {C};
+\node (D) at (3,3) {D};
+\node (E) at (3,2) {E};
+\node (F) at (3,1) {F};
+\draw[->] (A) -- (E);
+\draw[->] (B) -- (E);
+\draw[->] (C) -- (F);
+\end{tikzpicture}\hfill
+\begin{tikzpicture}[>=latex,thick]
+\draw (1,2) ellipse (.5 and 2);
+\draw (3,2) ellipse (.5 and 2);
+\node (A) at (1,3) {A};
+\node (B) at (1,2) {B};
+\node (C) at (1,1) {C};
+\node (D) at (3,3) {D};
+\node (E) at (3,2) {E};
+\node (F) at (3,1) {F};
+\draw[->] (A) -- (D);
+\draw[->] (B) -- (D);
+\draw[->] (C) -- (D);
+\end{tikzpicture}\hfill
+\begin{tikzpicture}[>=latex,thick]
+\draw (1,2) ellipse (.5 and 2);
+\draw (3,2) ellipse (.5 and 2);
+\node (A) at (1,3) {A};
+\node (B) at (1,2) {B};
+\node (C) at (1,1) {C};
+\node (D) at (3,3) {D};
+\node (E) at (3,2) {E};
+\node (F) at (3,1) {F};
+\draw[->] (A) -- (D);
+\draw[->] (B) -- (E);
+\draw[->] (C) -- (F);
+\end{tikzpicture}
 
-The set $B$ is called the {\bf
-  codomain} of $f$.
 
-The {\bf range} of $f$ is the set
-$
-\set{f(a) :  a\in A} = \set{b : (a,b)\in f}
-$.
 
 \end{frame}
 
 \bfr{Relations that are {\bf not} functions}
 
-\begin{tikzpicture}[>=latex]
+\begin{tikzpicture}[>=latex,thick]
 \draw (1,2) ellipse (.5 and 2);
 \draw (3,2) ellipse (.5 and 2);
 \node (A) at (1,3) {A};
@@ -267,7 +298,7 @@ $.
 \draw[->] (B) -- (E);
 \draw[->] (C) -- (F);
 \end{tikzpicture}\hfill
-\begin{tikzpicture}[>=latex]
+\begin{tikzpicture}[>=latex,thick]
 \draw (1,2) ellipse (.5 and 2);
 \draw (3,2) ellipse (.5 and 2);
 \node (A) at (1,3) {A};
@@ -279,9 +310,39 @@ $.
 \draw[->] (A) -- (D);
 \draw[->] (B) -- (E);
 \end{tikzpicture}\hfill
+\begin{tikzpicture}[>=latex,thick]
+\draw (1,2) ellipse (.5 and 2);
+\draw (3,2) ellipse (.5 and 2);
+\node (A) at (1,3) {A};
+\node (B) at (1,2) {B};
+\node (C) at (1,1) {C};
+\node (D) at (3,3) {D};
+\node (E) at (3,2) {E};
+\node (F) at (3,1) {F};
+\draw[->] (C) -- (D);
+\draw[->] (C) -- (E);
+\draw[->] (C) -- (F);
+\draw[->] (B) -- (E);
+\end{tikzpicture}
 
 
 
+
+\end{frame}
+\bfr{Domain, Codomain, Range}
+
+{\bf Definition 12.2}
+
+For a function $f:A\rightarrow B$, the set $A$
+is called the {\bf domain} of $f$.
+
+The set $B$ is called the {\bf
+  codomain} of $f$.
+
+The {\bf range} of $f$ is the set
+$
+\set{f(a) :  a\in A} = \set{b : (a,b)\in f}
+$.
 
 \end{frame}
 \bfr{Example function}
@@ -319,12 +380,10 @@ Not complete definition unless you specify domain and codomain:
 
 \pause
 \begin{itemize}
-\item  What is the domain?
-\item What is the codomain?
-\item What is the range?
+\item  What is the domain? \pause $\mathbb{Z^2}$
+\item What is the codomain? \pause $\mathbb{Z}$
+\item What is the range? \pause $\set{3k : k\in\ints} $
 \end{itemize}
-\pause
-\[ \set{3k : k\in\ints} \]
 
 \end{frame}
 
