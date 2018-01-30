@@ -38,6 +38,17 @@
 \newcommand{\colb}[1]{\end{column}\begin{column}{#1\textwidth}}
 \newcommand{\colc}{\end{column}\end{columns}}
 
+\newcommand{\figpage}[1]{
+  {
+    \usebackgroundtemplate{%
+      \parbox[c][\paperheight][c]{\paperwidth}{\centering\includegraphics[width=\paperwidth]{#1}}
+    }
+    %    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[plain]
+    \end{frame}
+  }
+}
+
 \title{Book of Proof: Part IV, Relations, Functions, and Cardinality}
 
 \RecustomVerbatimEnvironment{Verbatim}{Verbatim}{frame=single}
@@ -380,7 +391,7 @@ Not complete definition unless you specify domain and codomain:
 
 \pause
 \begin{itemize}
-\item  What is the domain? \pause $\mathbb{Z^2}$
+\item  What is the domain? \pause $\mathbb{Z}^2$
 \item What is the codomain? \pause $\mathbb{Z}$
 \item What is the range? \pause $\set{3k : k\in\ints} $
 \end{itemize}
@@ -442,7 +453,7 @@ every $x\in A$.
 
     {\bf How to show a function $f:A\rightarrow B$ is not injective:}
     \fbox{\parbox{0.9\textwidth}{
-      Find $x,y\in A, x=y$, with $f(x)\neq f(y)$.}}
+      Find $x,y\in A, x\neq y$, with $f(x) = f(y)$.}}
 
 
 \end{frame}
@@ -526,12 +537,14 @@ Therefore $g(2b-c,c-b) = (b,c)$ and so $g$ is surjective.
 
 \end{frame}
 
+\figpage{pigeons}
+
 \bfr{The Pigeonhole Principle}
 
 Suppose $A$ and $B$ are finite sets and $f:A\rightarrow B$ is any
 function.
 \begin{enumerate}
-\item If $|A| > |B|$ then $f$ is not surjective.
+\item If $|A| > |B|$ then $f$ is not injective.
 \item If $|A| < |B|$ then $f$ is not surjective.
 \end{enumerate}
 
@@ -678,12 +691,28 @@ Note that $f^{-1}(X)$ is a function even if $f$ is not invertible:
 \bfr{Cardinality}
 
 {\bf Definition 13.1}  Two sets $A$ and $B$ have the {\bf same
-  cardinality}, written $|A| = |B|$, if there exists a bijective
-function $f:A\rightarrow B$.
+  cardinality}, written $|A| = |B|$, if there exists a bijection
+$f:A\rightarrow B$.
 \vfill
 
 \grf{1.0}{nobijection}
 
+\end{frame}
+
+\bfr{$|\{1,2,3,4,...\}| = |\{2,4,6,8,...\}|$}
+
+{\large
+\begin{tabular}{c|cccccccccc}
+\nats&  1&2&3&4&5 & 6& 7& 8& 9&...\\\hline
+$\mathbb{E}$&  2&4&6&8&10&12&14&16&18&...
+\end{tabular}
+}
+
+\vfill
+Proved by the bijection $f:\{1,2,3,4,...\} \rightarrow \{2,4,6,8,...\}$
+\begin{align*}
+    f(n) &= 2n
+\end{align*}
 \end{frame}
 
 \bfr{$|\ints| = |\nats|$}
@@ -788,7 +817,6 @@ In both cases we have a contradiction, so $f$ cannot be a surjection.
 |\nats| < |\mathcal{P}(\nats)|
 < |\mathcal{P}(\mathcal{P}(\nats))|
 < |\mathcal{P}(\mathcal{P}(\mathcal{P}(\nats)))|
-< |\mathcal{P}(\mathcal{P}(\mathcal{P}(\mathcal{P}(\nats))))|
 < ...
 \]
 
