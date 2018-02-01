@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{amsfonts,amssymb,amsmath}
+\usepackage[margin=1in]{geometry}
+
+\title{CSCI 301, Winter 2018\\Math Exercises \# 4}
+\author{YOUR NAME HERE}
+\date{Due date:  Thursday, February 8, midnight.}
+
+\newcommand{\nats}{\ensuremath{\mathbb{N}}}
+
+\begin{document}
+
+\maketitle
+
+Prove each of the following by induction, for all $n\in\nats$.
+You may use SymPy or other symbolic algebra package to simplify
+algebraic expressions.
+
+\begin{enumerate}
+\item
+  \[
+ \sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}
+  \]
+\item
+  \[
+ \sum_{i=1}^n i(i+1) = \frac{n(n+1)(n+2)}{3}
+  \]
+\item
+  \[
+ \sum_{i=1}^n (8i-5) = 4n^2 - n
+ \]
+\item
+  \[
+  3\mid (5^{2n} -1)
+  \]
+\item
+  \[
+  9\mid (4^{3n} + 8)
+  \]
+\end{enumerate}
+
+
+\end{document}

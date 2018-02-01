@@ -10,6 +10,8 @@
 \newcommand{\myfig}[1]{\centerline{\includegraphics[scale=0.25]{figures/#1.png}}}
 \newcommand{\myfigt}[1]{\centerline{\includegraphics[scale=0.2]{figures/#1.png}}}
 
+\newcommand{\nats}{\ensuremath{\mathbb{N}}}
+\newcommand{\nni}{\ensuremath{\mathbb{N}^0}}
 \newcommand{\trans}[5]{
 \begin{tabular}{|c|c|c|c|c|}\hline
 #1 & #2 & #3 & #4 & #5 \\\hline
@@ -134,7 +136,7 @@ Languages
 \bi
 \li The concatenation of two strings is the string obtained by placing them next to each other.
 \li The concatenation of $aaa$ and $bccb$ is $aaabccb$
-\li The concatenation of a string $s$ with itself $n$ times is denoted $s^n$
+\li The concatenation of $s$ with itself $n$ times is denoted $s^n$
 \li $(ab)^2 = abab$, $(aba)^3 = abaabaaba$, $(ab)^0 = \emptystring$
 \ei
 \end{frame}
@@ -145,9 +147,11 @@ Languages
 \li Languages over $\{a,b\}$:
 
 $\emptyset$, $\{\emptystring\}$, $\{b\}$, $\{\emptystring, abb, aaaa\}$,
-$\{a^n | n \in \mathbb{N}\}= \{\emptystring, a, aa, aaa, aaaa, \ldots\}$,
-$\{ab^n | n \in \mathbb{N}\}= \{a, ab, abb, abbb, \ldots\}$,
-$\{(ab)^n | n \in \mathbb{N}\}= \{\emptystring, ab, abab, ababab, \ldots\}$
+$\{a^n : n \in \nni\}= \{\emptystring, a, aa, aaa, aaaa, \ldots\}$,
+$\{ab^n : n \in \nni\}= \{ a, ab, abb, abbb, \ldots\}$,
+$\{(ab)^n : n \in \nni\}= \{\emptystring, ab, abab, ababab, \ldots\}$,
+$\{a^{n^2} : n \in \nni\}=\{\emptystring, a, aaaa, aaaaaaaaa, ...\}$,
+$\{a^nb^{2n} : n\in\nni\}=\{\emptystring, abb, aabbbb, aaabbbbbb, ...\}$
 
 \li Since they are sets, we can make new languages from old with:
 
@@ -163,7 +167,7 @@ $\{(ab)^n | n \in \mathbb{N}\}= \{\emptystring, ab, abab, ababab, \ldots\}$
 \bi
 \li The product of languages $L$ and $M$ is
 \[
-LM = \{st | s\in L \wedge t \in M\}
+LM = \{st : s\in L \wedge t \in M\}
 \]
 \li If $L=\{ab, bb\}$ and $M = \{a,b,c\}$ then
 $LM = \{aba, abb, abc, bba, bbb, bbc\}$
@@ -192,7 +196,7 @@ $LM = \{aa,aba,abba\}$
 
 \sect{Product of a language with itself}
 \bi
-\li $L^n = \{s_1s_2s_3\ldots s_k | k\in\mathbb{N} \wedge \forall i, s_i\in L\}$
+\li $L^n = \{s_1s_2s_3\ldots s_k : k\in\nni \wedge \forall i, s_i\in L\}$
 \li If $L = \{a, bb\}$, then
 
 \li $L^0 = \{\emptystring\}$

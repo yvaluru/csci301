@@ -1,27 +1,25 @@
-\frametitle{ Some Theorems About Countability }
-
-{\bf Theorem 13.8} An infinite subset of a countably infinite set is
-countably infinite.
-
-\vfill
-
-{\bf Theorem 13.9} If $U\subseteq A$ and $U$ is uncountable, then $A$
-is uncountable.
-
-
-\vfill
-
-{\bf Theorem 13.10 (The Cantor-Bernstein-Schroeder Theorem)}
-
-If $|A| \leq |B|$ and $|B|\leq |A|$, then $|A| = |B|$.
-
-In other words, if there are injections $f:A\rightarrow B$ and
-$g:B\rightarrow A$, then there is a bijection $h:A\rightarrow B$.
-
-\vfill
-
-{\bf Theorem 13.11}  $|\mathbb{R}| = |\mathcal{P}(\mathbb{N})|$
-
-{\it Proof.}  Uses the CBS theorem.
-
+\frametitle{ Computer Programs }
+\begin{itemize}
+\item You know how to compute $\pi$ to any precision.
+  \pause
+\item Given any real number, $x\in\mathbb{R}$, is there a computer
+  program to compute it to any precision?
+  \pause
+\item How many computer programs are there?
+\item Let $\mathbb{P} = \{ x : \mbox{$x$ is a computer program in Scheme}\}$.
+  \pause
+\item Each program, in binary, represents a different natural number.
+  \pause
+\item Therefore there is an injection $f : \mathbb{P} \rightarrow \nats$.
+  \pause
+\item Therefore $|P| \leq |\nats|$, and since $P$ is infinite, $|P| = |\nats|$.
+  \pause
+\item How many real numbers are there?  $|\mathbb{R}|$
+  \pause
+\item Therefore $|\mathbb{P}| < |\mathbb{R}|$.
+  \pause
+\item Therefore there exists a real number $x\in\mathbb{R}$
+  that cannot be computed
+  by any computer program.
+\end{itemize}
 
