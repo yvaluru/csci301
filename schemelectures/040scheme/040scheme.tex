@@ -146,7 +146,7 @@ Scheme Notes 04
 \begin{Verbatim}
 (define (map-tree tree op)
   (cond ((empty? tree) '())
-        ((number? tree) (op tree))
+        ((not (pair? tree)) (op tree))
         (else (cons (map-tree (car tree) op)
                     (map-tree (cdr tree) op)))))
 \end{Verbatim}

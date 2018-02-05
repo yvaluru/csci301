@@ -40,13 +40,13 @@
 \end{frame}
 
 
-\bfr{Find a DFA}
+\bfr{Find a DFA: 101 but not 111}
 $
 \{w : w \mbox{ contains the string 101 but not the string 111}\}
 $
 
 Start with the basics:
-
+\pause
 \begin{tikzpicture}[->,>=latex,thick,node distance=2.5cm,auto,every node/.style={scale=0.75}]
   \node[state,initial] (0) {0};
   \node[state] (1) [right of=0] {1};
@@ -71,7 +71,7 @@ a 111 later on.
 
 \end{frame}
 
-\bfr{Find a DFA}
+\bfr{Find a DFA: 101 but not 111}
 $
 \{w : w \mbox{ contains the string 101 but not the string 111}\}
 $
@@ -102,7 +102,7 @@ Now we just have to fill in the missing arcs.
 \end{frame}
 
 
-\bfr{Find a DFA}
+\bfr{Find a DFA: 101 but not 111}
 $\{w : w \mbox{ contains the string 101 but not the string 111}\}$
 
 \begin{tikzpicture}[->,>=latex,thick,node distance=2.5cm,auto,every node/.style={scale=0.75}]
@@ -134,12 +134,12 @@ $\{w : w \mbox{ contains the string 101 but not the string 111}\}$
 \end{frame}
 
 
-\bfr{Find a DFA}
+\bfr{Find a DFA: 101 but not 111, part 2}
 $\{w : w \mbox{ contains the string 101 but not the string 111}\}$
 
 Let's do the same thing by starting with the two base languages,
 and forming the intersection.
-
+\pause
 \begin{tikzpicture}[->,>=latex,thick,node distance=2.5cm,auto,every node/.style={scale=0.75}]
   \node[state,initial,accepting] (A) {A};
   \node[state,accepting] (B) [right of=A] {B};
@@ -170,7 +170,7 @@ and forming the intersection.
 
 \end{frame}
 
-\bfr{Find a DFA}
+\bfr{Find a DFA: 101 but not 111, part 2}
 $\{w : w \mbox{ contains the string 101 but not the string 111}\}$
 
 
